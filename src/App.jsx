@@ -1,5 +1,6 @@
 
 import './App.css';
+import ButtonLinksContainer from './components/ButtonLinksContainer';
 import DescriptionSection from './components/DescriptionSection';
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <p>Aqui va el Navbar</p>
       <DescriptionSection></DescriptionSection>
+      <ButtonLinksContainer></ButtonLinksContainer>
     </div>
   );
 }

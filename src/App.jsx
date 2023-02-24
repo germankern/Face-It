@@ -1,10 +1,10 @@
 import './App.css';
-import Saludar from './components/Header';
-
+import Navbar from './components/Navbar.jsx';
 function App() {
   return (
     <div className="App">
-      <Saludar></Saludar>
+      <Navbar>
+      </Navbar>
     </div>
   );
 }

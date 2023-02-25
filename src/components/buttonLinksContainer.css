@@ -1,0 +1,30 @@
+@media screen and (min-width: 360px) {
+    .link-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 16px;
+    }
+
+    .link-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    .img-items {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 4px;
+    }
+
+    .link-events{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 125%;
+        min-width: 104px;
+        text-align: center;
+    }
+}

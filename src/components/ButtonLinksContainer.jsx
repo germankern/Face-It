@@ -10,15 +10,15 @@ const ButtonLinksContainer = () => {
         <div className='link-container'>
             <div className='link-items'>
                 <img className='img-items' src={Eventos} alt="" />
-                <a className='link-events'>Eventos</a>
+                <a className='link-events' href='https://www.google.com/?hl=es'>Eventos</a>
             </div>
             <div className='link-items'>
                 <img className='img-items' src={Incripciones} alt="" />
-                <a className='link-events'>Inscripciones</a>
+                <a className='link-events' href='https://www.google.com/?hl=es'>Inscripciones</a>
             </div>
             <div className='link-items'>
                 <img className='img-items' src={Recomendaciones} alt="" />
-                <a className='link-events'>Recomendaciones</a>
+                <a className='link-events' href='https://www.google.com/?hl=es'>Recomendaciones</a>
             </div>
             
         </div>

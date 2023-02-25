@@ -1,0 +1,17 @@
+.contact-container{
+    display: grid;
+    width: 345px;
+    height: 120px;
+    margin: 0 auto;
+    grid-template-columns: 40px 1fr 1fr;
+    grid-template-rows: minmax(50px,auto );
+}
+
+.title{
+    grid-column: 1/4; 
+    align-self: end;
+    margin-bottom: 10px;
+}
+.correo ,.whatsapp{
+    grid-column: 2/4;
+}

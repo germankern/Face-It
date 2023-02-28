@@ -1,0 +1,50 @@
+@media (min-width: 510px) {
+  .coupleContainer {
+    width: 510px !important;
+    height: 220px !important;
+  }
+  .coupleContainer h2 {
+    top: 185px !important;
+    font-size: 18px;
+  }
+  .eventListContainer {
+    margin-top: 50px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .coupleContainer h2 {
+    height: 60px !important;
+    width: 240px !important;
+    left: -50px !important;
+    z-index: 5 !important;
+    line-height: 20px !important;
+    padding: 10px;
+  }
+  .coupleContainer {
+    overflow: visible !important;
+  }
+  .coupleContainer img {
+    border-top-left-radius: 20px;
+  }
+  .eventListContainer {
+    display: flex;
+    margin-top: 70px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .eventImage {
+    width: 180px;
+    height: 280px;
+  }
+  .eventImage img {
+    width: 180px;
+    height: 200px !important;
+  }
+  .eventListContainer div:nth-child(1) {
+    margin-right: 10px;
+  }
+  .eventListContainer div:nth-child(2) {
+    margin-right: 10px;
+  }
+}

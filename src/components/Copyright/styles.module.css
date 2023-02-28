@@ -1,0 +1,42 @@
+.containerCopyright {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 31px;
+  margin-top: 37px;
+}
+
+.containerCopyright p {
+  color: rgba(151, 151, 151, 1);
+  margin-left: 18px;
+  font-size: 10px;
+}
+.containerCopyright img:nth-child(1) {
+  width: 21px;
+  height: 18px;
+}
+.containerCopyright img:nth-child(2) {
+  width: 53px;
+  height: 16px;
+}
+.containerBrand2 {
+  margin-right: 18px;
+}
+
+@media (min-width: 510px) {
+  .containerCopyright {
+    height: 51px;
+  }
+  .containerCopyright p {
+    font-size: 14px;
+  }
+  .containerCopyright img:nth-child(1) {
+    width: 66px;
+    height: 30px;
+  }
+  .containerCopyright img:nth-child(2) {
+    width: 63px;
+    height: 30px;
+  }
+}

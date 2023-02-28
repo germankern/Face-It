@@ -1,0 +1,44 @@
+.containerDesktopNavbar {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  z-index: 9000;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbarLinks {
+  display: flex;
+  margin-right: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.navbarLinks p {
+  margin: 0px 25px;
+  line-height: 36px;
+}
+
+.navbarLinks p:nth-child(3) {
+  margin-right: 40px;
+}
+
+.navbarLinks button {
+  border: none;
+  padding: 10px;
+  background-color: #e05aa0;
+  color: white;
+  font-size: 12px;
+  border-radius: 85px;
+  width: 100px;
+}
+
+/* .navbarLinks button{
+    margin-left: 40px;
+} */
+
+@media (min-width: 768px) {
+  .containerBrand1 {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,42 @@
+.contactContainer {
+  display: grid;
+  width: 345px;
+  height: 120px;
+  margin: 0 auto;
+  grid-template-columns: 40px 1fr 1fr;
+  grid-template-rows: minmax(50px, auto);
+}
+
+.title {
+  grid-column: 1/4;
+  align-self: end;
+  margin-bottom: 10px;
+}
+.correo,
+.whatsapp {
+  grid-column: 2/4;
+}
+
+@media (min-width: 510px) {
+  .contactContainer {
+    width: 460px;
+  }
+  .contactContainer p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    width: 180px;
+    margin: 0;
+  }
+  .title {
+    font-size: 12px !important;
+    font-weight: 500;
+  }
+  .contactContainer p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+}

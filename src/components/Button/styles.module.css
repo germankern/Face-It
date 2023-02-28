@@ -1,0 +1,31 @@
+.containerButtom {
+  flex: 5;
+  z-index: 3;
+}
+
+.containerButtom button {
+  margin-left: 20px;
+  background-color: #e05aa0;
+  border: none;
+  padding: 13px;
+  border-radius: 85px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 510px) {
+  .containerButtom button {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerButtom {
+    flex: none;
+    margin-bottom: 100px;
+  }
+  .containerButtom button {
+    margin-left: 40px;
+  }
+}

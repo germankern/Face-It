@@ -1,0 +1,30 @@
+@media screen and (min-width: 360px) {
+  .descriptionSectionContainer {
+    background-color: #ffce00;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .h2Desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 125%;
+    margin: 16px;
+  }
+
+  .pDesc {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 125%;
+    margin: 18px;
+  }
+}
+
+@media (min-width: 510px) {
+  .pDesc {
+    font-size: 14px;
+  }
+  .h2Desc {
+    font-size: 18px;
+  }
+}

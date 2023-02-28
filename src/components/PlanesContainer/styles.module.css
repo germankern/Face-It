@@ -1,0 +1,29 @@
+@media screen and (min-width: 360px) {
+  .planesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+  }
+  .planesContainer h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: center;
+  }
+  .planes {
+    margin: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .planes h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .planes p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+}

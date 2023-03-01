@@ -7,13 +7,11 @@ import styles from "./styles.module.css";
 
 function Footer() {
   return (
-    <>
-      <div className={styles.informationContainer}>
-        <Contact />
-        <Networks />
-      </div>
+    <div className={styles.informationContainer}>
+      <Contact />
+      <Networks />
       <Copyright />
-    </>
+    </div>
   );
 }
 

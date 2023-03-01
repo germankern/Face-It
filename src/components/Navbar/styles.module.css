@@ -5,7 +5,29 @@
   z-index: 9000;
   justify-content: space-between;
   width: 100%;
+  display: none;
 }
+
+.containerMobileNavbar {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .containerDesktopNavbar {
+    display: block;
+  }
+  .containerMobileNavbar {
+    display: none;
+  }
+  .containerBrand1 {
+    margin-left: 30px;
+  }
+}
+
 .navbarLinks {
   display: flex;
   margin-right: 30px;
@@ -36,9 +58,3 @@
 /* .navbarLinks button{
     margin-left: 40px;
 } */
-
-@media (min-width: 768px) {
-  .containerBrand1 {
-    margin-left: 30px;
-  }
-}

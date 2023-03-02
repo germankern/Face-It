@@ -29,6 +29,7 @@
     height: 51px;
   }
   .containerCopyright p {
+    width: 100%;
     font-size: 14px;
   }
   .containerCopyright img:nth-child(1) {

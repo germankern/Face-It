@@ -28,5 +28,7 @@
     justify-content: center;
     align-items: center;
     border-left: 1px solid rgba(95, 95, 95, 0.7);
+    border-right: 1px solid rgba(95, 95, 95, 0.7);
+    flex: 1;
   }
 }

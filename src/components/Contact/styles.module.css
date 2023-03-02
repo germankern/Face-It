@@ -1,6 +1,6 @@
 .contactContainer {
   display: grid;
-  width: 345px;
+  width: 85%;
   height: 120px;
   margin: 0 auto;
   grid-template-columns: 40px 1fr 1fr;
@@ -30,6 +30,8 @@
   .contactContainer {
     width: 180px;
     margin: 0;
+    flex: 1;
+    margin-left: 100px;
   }
   .title {
     font-size: 12px !important;

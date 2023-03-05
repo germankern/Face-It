@@ -4,7 +4,6 @@ import Logo from "../../assets/images/Logo.svg";
 import styles from "./styles.module.css";
 
 const Brand = (props) => {
-  console.log(props.type === "Copyright");
   return (
     <div
       className={`

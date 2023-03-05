@@ -1,3 +1,4 @@
+import TextSection from "@/components/TextSection/TextSection";
 import styles from "./style.module.css";
 
 const alltext = [
@@ -8,6 +9,7 @@ const alltext = [
       1: "Una cookie es un archivo de texto que un servidor de páginas web coloca en tu disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a tu computadora. Las cookies se te asignan de forma exclusiva y solo un servidor web en el dominio que emitió la cookie puede leerlas.",
       2: "Podemos utilizar cookies para recopilar, almacenar y rastrear información con fines estadísticos o de marketing para operar nuestro sitio web. Tienes la capacidad de aceptar o rechazar cookies opcionales. Hay algunas cookies obligatorias que son necesarias para el funcionamiento de nuestro sitio web. Estas cookies no requieren tu consentimiento ya que siempre funcionan. Ten en cuenta que al aceptar las cookies requeridas, también aceptas las cookies de terceros, que podrían usarse a través de servicios proporcionados por terceros si utilizas dichos servicios en nuestro sitio web, por ejemplo, una ventana de visualización de video proporcionada por terceros e integrada en nuestro sitio web.",
     },
+    id: 0,
   },
   {
     title: "Licencia:",
@@ -35,6 +37,7 @@ const alltext = [
       3: "Los comentarios no se utilizarán para solicitar o promover negocios o actividades comerciales personalizadas o presentes o actividades ilegales.",
       4: "Por la presente, otorgas a Face It! Citas Rápidas una licencia no exclusiva para usar, reproducir, editar y autorizar a otros a usar, reproducir y editar cualquiera de tus comentarios en todas y cada una de las formas, formatos, o medios.",
     },
+    id: 1,
   },
   {
     title: "Hipervínculos a nuestro contenido:",
@@ -67,18 +70,50 @@ const alltext = [
       2: "Si eres una de las organizaciones enumeradas en el párrafo 2 y estás interesada en vincularte a nuestro sitio web, debes informarnos enviando un correo electrónico a Face It! Citas Rápidas. Incluye tu nombre, el nombre de tu organización, la información de contacto, así como la URL de tu sitio, una lista de las URL desde las que tienes la intención de vincular a nuestro sitio web y una lista de las URL de nuestro sitio a las que te gustaría acceder. Espera 2-3 semanas para recibir una respuesta.",
       3: "Las organizaciones aprobadas pueden hacer hipervínculos a nuestro sitio web de la siguiente manera:",
     },
+    allList3: {
+      0: "Mediante el uso de nuestro nombre corporativo; o",
+      1: " Mediante el uso del localizador uniforme de recursos al que se está vinculando; o",
+      2: "Usar cualquier otra descripción de nuestro sitio web al que está vinculado que tenga sentido dentro del contexto y formato del contenido en el sitio de la parte vinculante.",
+    },
+    allParagraph4: {
+      0: "No se permitirá el uso del logotipo de Face It! Citas Rápidas u otro material gráfico para vincular sin un acuerdo de licencia de marca comercial.",
+    },
+    id: 2,
   },
   {
     title: "Responsabilidad del contenido:",
+    allParagraph: {
+      0: "No seremos responsables de ningún contenido que aparezca en tu sitio web. Aceptas protegernos y defendernos contra todas las reclamaciones que se presenten en tu sitio web. Ningún enlace(s) debe aparecer en ningún sitio web que pueda interpretarse como difamatorio, obsceno o criminal, o que infrinja, de otra manera viole o defienda la infracción u otra violación de los derechos de terceros.",
+    },
+    id: 3,
   },
   {
     title: "Reserva de derechos:",
+    allParagraph: {
+      0: "Nos reservamos el derecho de solicitar que elimines todos los enlaces o cualquier enlace en particular a nuestro sitio web. Apruebas eliminar de inmediato todos los enlaces a nuestro sitio web cuando se solicite. También nos reservamos el derecho de modificar estos términos y condiciones y su política de enlaces en cualquier momento. Al vincular continuamente a nuestro sitio web, aceptas estar vinculado y seguir estos términos y condiciones de vinculación.",
+      1: "Eliminación de enlaces de nuestro sitio web:",
+      2: "Si encuentras algún enlace en nuestro sitio que sea ofensivo por cualquier motivo, puedes contactarnos e informarnos en cualquier momento. Consideraremos las solicitudes para eliminar enlaces, pero no estamos obligados a hacerlo ni a responder directamente.",
+      3: "No nos aseguramos de que la información de este sitio web sea correcta. No garantizamos su integridad o precisión, ni prometemos asegurarnos de que el sitio web permanezca disponible o que el material en el sitio se mantenga actualizado.",
+      4: "Exención de responsabilidad:",
+      5: "En la medida máxima permitida por la ley aplicable, excluimos todas las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este. Nada en este descargo de responsabilidad:",
+    },
+    allList: {
+      0: "limitará o excluirá nuestra responsabilidad o la tuya por muerte o lesiones personales;",
+      1: "limitará o excluirá nuestra responsabilidad o la tuya por fraude o tergiversación fraudulenta;",
+      2: "limitará cualquiera de nuestras responsabilidades o las tuyas de cualquier manera que no esté permitida por la ley aplicable; o",
+      3: "excluirá cualquiera de nuestras responsabilidades o las tuyas que no puedan estar excluidas según la ley aplicable.",
+    },
+    allParagraph2: {
+      0: "Las limitaciones y prohibiciones de responsabilidad establecidas en esta sección y en otras partes de este descargo de responsabilidad: (a) están sujetas al párrafo anterior; y (b) regirá todas las responsabilidades que surjan en virtud de la exención de responsabilidad, incluidas las responsabilidades que surjan en el contrato, en agravio y por incumplimiento de la obligación legal.",
+      1: "Siempre que el sitio web y la información y los servicios en el sitio se proporcionen de forma gratuita, no seremos responsables de ninguna pérdida o daño de cualquier naturaleza.",
+    },
+    id: 4,
   },
 ];
 
 const Survey = () => {
   return (
-    <div className={styles.SurveyContainr}>
+    <div className={styles.TermsContainer}>
       <div className={styles.IntroductionContainer}>
         <h1>Terminos y Condiciones</h1>
         <p>
@@ -93,7 +128,22 @@ const Survey = () => {
           página.
         </p>
       </div>
-      <div className={styles.AllTextSection}></div>
+      <section className={styles.AllTextSection}>
+        {alltext.map((section, key) => (
+          <TextSection
+            key={key}
+            id={section.id}
+            title={section.title}
+            allParagraph={section.allParagraph}
+            allParagraph2={section.allParagraph2}
+            allParagraph3={section.allParagraph3}
+            allParagraph4={section.allParagraph4}
+            allList={section.allList}
+            allList2={section.allList2}
+            allList3={section.allList3}
+          />
+        ))}
+      </section>
     </div>
   );
 };

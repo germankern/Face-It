@@ -6,7 +6,18 @@
   height: 31px;
   margin-top: 37px;
 }
+.styleContainerCopyright {
+  width: 100%;
+  height: 50px;
+  margin-right: 20px;
+  justify-content: end;
+}
 
+@media (min-width: 768px) {
+  .containerBrand {
+    margin-left: 25px;
+  }
+}
 .containerCopyright p {
   color: rgba(151, 151, 151, 1);
   margin-left: 18px;

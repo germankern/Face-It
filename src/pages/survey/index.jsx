@@ -1,8 +1,4 @@
-const Survey=()=>{
-    return(
-        <div>
-            Hola Soy Survey
-        </div>
-    )
-}
-export default Survey
+const Survey = () => {
+  return <div></div>;
+};
+export default Survey;

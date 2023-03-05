@@ -29,3 +29,47 @@
     margin-left: 40px;
   }
 }
+
+.buttonSurvey button {
+  margin-bottom: 50px;
+  width: 150px;
+  margin-left: 10px;
+  font-size: 25px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+}
+
+.buttonSurvey span {
+  font-size: 40px;
+}
+
+.buttonSubmit {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.buttonSubmit button {
+  display: block;
+  margin: 0 auto;
+}
+
+.buttonSubmit button {
+  width: 120px;
+  font-size: 20px;
+}
+
+@media (min-width: 575px) {
+  /* BackgroundMain */
+  .buttonSubmit button {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* BackgroundMain */
+  .buttonSurvey {
+    margin-bottom: 15px;
+  }
+}

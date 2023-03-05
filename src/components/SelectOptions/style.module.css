@@ -1,0 +1,98 @@
+.ContainerSelectOptions {
+  margin-bottom: 50px;
+}
+
+.ContainerDropDown {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-bottom: 1px solid rgba(224, 90, 160, 1);
+}
+
+.ContainerDropDown::before {
+  content: url(../../assets/images/Vector.svg);
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  transition: 0.5s;
+}
+.ContainerDropDown.active::before {
+  top: 25px;
+  transform: rotate(-180deg);
+}
+
+.ContainerDropDown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+}
+
+.ContainerDropDown .option {
+  position: relative;
+  top: 51px;
+  background-color: #fff;
+  overflow: hidden;
+  display: none;
+}
+.ContainerDropDown.active .option {
+  display: block;
+}
+.ContainerDropDown ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ContainerDropDown li {
+  padding: 10px;
+  border: 1px solid rgba(226, 228, 229, 1);
+  cursor: pointer;
+}
+
+.ContainerDropDown li:hover {
+  background-color: rgb(205, 200, 200);
+}
+
+.ContainerDropDown {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .ContainerDropDown input {
+    padding: 0px 12px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .ContainerDropDown {
+    height: 30px;
+  }
+  .ContainerDropDown input {
+    padding-top: 10px;
+  }
+  .ContainerDropDown .option {
+    top: 31px;
+    z-index: 1000000;
+  }
+  .ContainerDropDown::before {
+    content: url(../../assets/images/Vector.svg);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 90;
+    width: 3px;
+    height: 3px;
+    transition: 0.5s;
+  }
+}

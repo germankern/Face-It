@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
 import Button from "@/components/Button";
 import ButtonQuestions from "@/components/ButtonsQuestions/ButtonQuestions";
@@ -174,5 +175,9 @@ const Survey = () => {
       />
     </>
   );
+=======
+const Survey = () => {
+  return <div></div>;
+>>>>>>> footer
 };
 export default Survey;

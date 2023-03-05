@@ -5,7 +5,7 @@ const Copyright = () => {
   return (
     <div className={styles.containerCopyright}>
       <p>FaceIt | 2023</p>
-      {/* <Brand name="container-brand-2"></Brand> */}
+      <Brand type="Copyright"></Brand>
     </div>
   );
 };

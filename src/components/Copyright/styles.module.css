@@ -7,6 +7,11 @@
   margin-top: 37px;
 }
 
+@media (min-width: 768px) {
+  .containerBrand {
+    margin-left: 25px;
+  }
+}
 .containerCopyright p {
   color: rgba(151, 151, 151, 1);
   margin-left: 18px;
@@ -29,6 +34,7 @@
     height: 51px;
   }
   .containerCopyright p {
+    width: 100%;
     font-size: 14px;
   }
   .containerCopyright img:nth-child(1) {

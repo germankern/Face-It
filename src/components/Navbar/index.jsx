@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.containerDesktopNavbar}>
-        <Brand name="container-brand-1"></Brand>
+        <Brand />
         <div className={styles.navbarLinks}>
           <p>Conocenos</p>
           <p>Convenios</p>
@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
       <div className={styles.containerMobileNavbar}>
         <Hamburger />
-        <Brand name="container-brand-1" />
+        <Brand />
       </div>
     </>
   );

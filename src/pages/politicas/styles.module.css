@@ -1,0 +1,32 @@
+.PolitContainer {
+  margin-left: 30px;
+}
+
+.PolitContainer h1 {
+  margin-bottom: 5px;
+}
+
+.IntroductionContainer {
+  font-size: 10px;
+}
+
+@media (min-width: 576px) {
+  .PolitContainer h1 {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .PolitContainer {
+    margin-left: 30px;
+  }
+
+  .PolitContainer h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .IntroductionContainer {
+    font-size: 20px;
+  }
+}

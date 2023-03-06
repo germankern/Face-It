@@ -2,8 +2,8 @@ import styles from "./style.module.css";
 
 const ContainerRadio = (props) => {
   return (
-    <div className={styles["containerRadio"]}>
-      <label className={styles["buttonRadio"]}>
+    <div className={styles.containerRadio}>
+      <label className={styles.buttonRadio}>
         <input type="radio" />
         {props.option}
         <i></i>

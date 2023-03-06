@@ -1,10 +1,10 @@
 import styles from "./style.module.css";
 
-const BlockStyle = (props) => {
+const BlockStyle = ({ parrafo, email }) => {
   return (
     <div className={styles.containerBlockStyle}>
-      <p>{props.parrafo}</p>
-      <b>{props.email}</b>
+      <p>{parrafo}</p>
+      <b>{email}</b>
     </div>
   );
 };

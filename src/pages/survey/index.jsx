@@ -1,6 +1,6 @@
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
 import Button from "@/components/Button";
-import ButtonQuestions from "@/components/ButtonsQuestions/ButtonQuestions";
+import ButtonQuestions from "@/components/ButtonsQuestions";
 import MainSection from "@/components/MainSection";
 import SelectOptions from "@/components/SelectOptions";
 import TextArea from "@/components/TextArea";

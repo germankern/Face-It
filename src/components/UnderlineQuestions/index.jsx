@@ -1,21 +1,21 @@
 import styles from "./style.module.css";
 
-const UnderlineQuestions = (props) => {
+const UnderlineQuestions = ({ question, text, placeHolder }) => {
   return (
     <div className={styles.containerQuestions}>
-      <label>{props.question}</label>
-      {props.text ? (
+      <label>{question}</label>
+      {text ? (
         <div className={styles.containerInput}>
           <input
             className={styles.inputAnswers}
-            placeholder={[props.placeHolder != "" ? props.placeHolder : ""]}
+            placeholder={[placeHolder != "" ? placeHolder : ""]}
           ></input>
-          <p>{props.text}</p>
+          <p>{text}</p>
         </div>
       ) : (
         <input
           className={styles.inputAnswers}
-          placeholder={[props.placeHolder != "" ? props.placeHolder : ""]}
+          placeholder={[placeHolder != "" ? placeHolder : ""]}
         ></input>
       )}
     </div>

@@ -1,11 +1,11 @@
 import styles from "./styles.module.css";
-const TextArea = (props) => {
+const TextArea = ({ title, placeHolder }) => {
   return (
     <div className={styles.textArea}>
       <label>
-        <h2>{props.title}</h2>
+        <h2>{title}</h2>
       </label>
-      <textarea placeholder={props.placeHolder}></textarea>
+      <textarea placeholder={placeHolder}></textarea>
     </div>
   );
 };

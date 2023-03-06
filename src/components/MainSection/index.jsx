@@ -9,7 +9,7 @@ const MainSection = (props) => {
       {main ? (
         <div
           className={`${styles.containerMainSection} ${
-            props.name === "survey" && styles["backgroundSurvey"]
+            props.name === "survey" && styles.backgroundSurvey
           }`}
         >
           <h1>
@@ -22,7 +22,7 @@ const MainSection = (props) => {
       ) : (
         <div
           className={`${styles.containerMainSection} ${
-            props.name === "survey" && styles["backgroundSurvey"]
+            props.name === "survey" && styles.backgroundSurvey
           }`}
         >
           <h1>¡Queremos conocerte!</h1>

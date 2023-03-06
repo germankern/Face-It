@@ -2,16 +2,16 @@ import styles from "./style.module.css";
 import React, { useState, useEffect } from "react";
 import DropDownsOptions from "../DropDownsOptions";
 
-const SelectOptions = (props) => {
-  const [placeHolder, setplaceHolder] = useState(" ");
+const SelectOptions = ({ placeHolder, title, options }) => {
+  const [placeholder, setplaceHolder] = useState(" ");
   const [active, setactive] = useState("");
   useEffect(() => {
-    setplaceHolder(props.placeHolder);
-  }, [props.placeHolder]);
+    setplaceHolder(placeHolder);
+  }, [placeHolder]);
   return (
     <>
       <div className={`${styles.containerSelectOptions}`}>
-        <label>{props.title}</label>
+        <label>{title}</label>
         <div
           onClick={() => {
             active != "active" ? setactive("active") : setactive("");
@@ -23,11 +23,11 @@ const SelectOptions = (props) => {
           <input
             type="text"
             className={styles.textBox}
-            placeholder={placeHolder}
+            placeholder={placeholder}
             readOnly
           />
           <ul className={styles.option}>
-            {props.options.map((item, key) => (
+            {options.map((item, key) => (
               <DropDownsOptions
                 key={key}
                 setplaceHolder={setplaceHolder}

@@ -1,10 +1,10 @@
-.ItemParagraph {
+.itemParagraph {
   font-size: 10px;
   font-weight: 400;
 }
 
 @media (min-width: 768px) {
-  .ItemParagraph {
+  .itemParagraph {
     font-size: 20px;
   }
 }

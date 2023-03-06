@@ -7,7 +7,7 @@ import MainSection from "../components/MainSection";
 export default function Home() {
   return (
     <>
-      <MainSection />
+      <MainSection name="main" />
       <DescriptionSection />
       <ButtonLinksContainer />
       <EventContainer />

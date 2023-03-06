@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
-import TextSection from "@/components/TextSection/TextSection";
+import TextSection from "@/components/TextSection/index";
 
 const alltext = [
   {
@@ -64,8 +64,8 @@ const alltext = [
 const PolitcasPrivacidad = () => {
   return (
     <>
-      <div className={styles.PolitContainer}>
-        <div className={styles.IntroductionContainer}>
+      <div className={styles.politContainer}>
+        <div className={styles.introductionContainer}>
           <h1>Políticas de privacidad</h1>
           <p>
             El sitio web Face It! Citas Rápidas es propiedad de Face It! Citas
@@ -82,7 +82,7 @@ const PolitcasPrivacidad = () => {
             confidencialidad y seguridad.
           </p>
         </div>
-        <section className={styles.AllTextSection}>
+        <section className={styles.allTextSection}>
           {alltext.map((section, key) => (
             <TextSection
               key={key}

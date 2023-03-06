@@ -3,6 +3,8 @@ import Licencia from "../Licencia/index";
 import Hipervínculos from "../Hipervinculos/index";
 import Responsabilidad from "../Responsabilidad/index";
 import Reserva from "../Reserva/index";
+import Derechos from "../Derechos";
+import SectionParagraphPoliticals from "../SectionParagraphPoliticals";
 
 const TextSection = ({
   title,
@@ -97,6 +99,24 @@ const TextSection = ({
                 id={id}
               />
             );
+          } else {
+            if (title === "Tus derechos:") {
+              textSection = (
+                <Derechos
+                  allParagraph={allParagraph}
+                  title={title}
+                  allList={allList}
+                  allParagraph2={allParagraph2}
+                />
+              );
+            } else {
+              textSection = (
+                <SectionParagraphPoliticals
+                  allParagraph={allParagraph}
+                  title={title}
+                />
+              );
+            }
           }
         }
       }

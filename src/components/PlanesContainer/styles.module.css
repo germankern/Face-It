@@ -35,5 +35,47 @@
 }
 .acordeonMenuShow {
   padding: 0px 30px;
-  font-size: 12px;
+  font-size: 13px;
+}
+.acordeonMenuShow p {
+  padding: 10px 0px;
+}
+.infoPlanes {
+  list-style: none;
+  padding-left: 0;
+}
+.infoPlanes li {
+  background-image: url("../../assets/images/Check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 8px 32px;
+  font-size: 13px;
+  line-height: 148%;
+  letter-spacing: 0.25px;
+}
+.contactoMail {
+  background-color: #ffce00;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 26px 14px;
+}
+.contactoMail a {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .planesContainer {
+    padding: 0px;
+  }
+  .planesContainer h2 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 125%;
+    padding: 85px 155px 75px 155px;
+    margin: 0px;
+  }
+  .contactoMail {
+    font-size: 25px;
+  }
 }

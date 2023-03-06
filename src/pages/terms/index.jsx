@@ -6,8 +6,8 @@ import { alltext } from "./string";
 const Survey = () => {
   return (
     <>
-      <div className={styles.TermsContainer}>
-        <div className={styles.IntroductionContainer}>
+      <div className={styles.termsContainer}>
+        <div className={styles.introductionContainer}>
           <h1>Terminos y Condiciones</h1>
           <p>
             Estos términos y condiciones describen las reglas y regulaciones
@@ -21,7 +21,7 @@ const Survey = () => {
             página.
           </p>
         </div>
-        <section className={styles.AllTextSection}>
+        <section className={styles.allTextSection}>
           {alltext.map((section, key) => (
             <TextSection
               key={key}

@@ -44,9 +44,68 @@
 .containerMainSection p:nth-child(3) {
   margin-bottom: 18px;
 }
+
+.backgroundSurvey {
+  background-image: url("../../assets/images/survey.jpg");
+  height: 220px;
+  width: 100%;
+  background-size: 420px 255px;
+  background-position-y: -31px;
+  background-position-x: -50px;
+  position: relative;
+}
+.backgroundSurvey p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 361px) {
+  /* BackgroundMain */
+  .backgroundSurvey {
+    background-size: 450px 255px;
+  }
+}
+
+@media (min-width: 396px) {
+  /* BackgroundMain */
+  .backgroundSurvey {
+    height: 220px;
+    width: 100%;
+    background-size: 480px 255px;
+  }
+}
+
+@media (min-width: 420px) {
+  /* BackgroundMain */
+  .backgroundSurvey {
+    background-size: 100% 255px;
+    background-position-x: 10px;
+  }
+}
+
 @media (min-width: 510px) {
-  .containerMainSection {
-    background-size: 100% 550px;
+  /* BackgroundMain */
+  .backgroundSurvey {
+    background-size: 100% 255px;
+    background-position-x: 10px;
+  }
+}
+
+@media (min-width: 560px) {
+  /* BackgroundMain */
+  .backgroundSurvey {
+    background-size: 100% 300px;
+    background-position-x: 10px;
+    background-position-y: -60px;
+  }
+}
+
+@media (min-width: 660px) {
+  /* BackgroundMain */
+  .backgroundSurvey {
+    background-size: 100% 350px;
+    background-position-x: 10px;
+    background-position-y: -90px;
   }
 }
 
@@ -60,5 +119,28 @@
   }
   .containerMainSection p {
     margin-left: 40px;
+  }
+  /* BackgroundMain */
+  /* Font Size*/
+  .backgroundSurvey {
+    height: 320px;
+    background-size: 100% 400px;
+    background-position-y: -40px;
+    background-image: url("../../assets/images/survey2.jpg");
+  }
+  .backgroundSurvey::after {
+    background: linear-gradient(
+      90.06deg,
+      #020c18 3.26%,
+      rgba(2, 12, 24, 0) 99.04%
+    );
+  }
+
+  .backgroundSurvey p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .backgroundSurvey h1 {
+    font-size: 28px;
   }
 }

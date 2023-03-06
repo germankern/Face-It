@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-.ItemParagraph {
-=======
 .itemParagraph {
->>>>>>> terms
   font-size: 10px;
   font-weight: 400;
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
-  .ItemParagraph {
-=======
   .itemParagraph {
->>>>>>> terms
     font-size: 20px;
   }
 }

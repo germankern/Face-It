@@ -1,0 +1,79 @@
+.containerQuestions {
+  display: flex;
+  flex-direction: column;
+}
+.inputAnswers {
+  width: 80%;
+  height: 46px;
+  border: none;
+  border-bottom: 1px solid rgba(224, 90, 160, 1);
+}
+.inputAnswers:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(225, 20, 126);
+}
+.inputAnswers:active {
+  border: none;
+}
+
+.containerQuestions {
+  margin-bottom: 50px;
+}
+.containerInput {
+  display: flex;
+}
+.containerInput p {
+  line-height: 46px;
+  font-weight: 500;
+}
+.containerInput input {
+  width: 70%;
+}
+
+@media (min-width: 660px) {
+  /* BackgroundMain */
+  .containerQuestions {
+    flex-direction: row;
+  }
+  .containerQuestions label {
+    line-height: 82px;
+  }
+  .inputAnswers {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerQuestions {
+    margin-bottom: 15px;
+  }
+  .containerInput input {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .containerInput p {
+    line-height: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerQuestions {
+    height: 25px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .containerQuestions label {
+    line-height: 25px;
+    margin-right: 10px;
+  }
+  .containerQuestions input {
+    margin: 0;
+    height: 25px;
+  }
+  .containerInput p {
+    line-height: 25px;
+  }
+}

@@ -1,60 +1,54 @@
 .containerDesktopNavbar {
-  display: flex;
-  position: absolute;
-  top: 20px;
-  z-index: 9000;
-  justify-content: space-between;
-  width: 100%;
+  background-color: black;
+}
+.containerDesktopNavbar p {
+  color: white;
+}
+
+.containerDesktopNavbar {
   display: none;
 }
 
+/*Mobile Navbar*/
+/*Estilos generales al contenedor*/
 .containerMobileNavbar {
-  background: black;
+  background-color: black;
   display: flex;
   align-items: center;
   height: 56px;
-  display: block;
 }
-
+/*Desktop Navbar*/
 @media (min-width: 768px) {
   .containerDesktopNavbar {
     display: block;
+    display: flex;
+    justify-content: space-between;
+    height: 93px;
   }
   .containerMobileNavbar {
     display: none;
   }
-  .containerBrand1 {
-    margin-left: 30px;
+  .navbarLinks {
+    display: flex;
+    align-items: center;
+  }
+  .navbarLinks p:nth-child(1) {
+    margin: 0 25px;
+  }
+  .navbarLinks p:nth-child(3) {
+    margin: 0 25px;
+  }
+  .containerDesktopNavbar button {
+    margin-right: 25px;
+    border: none;
+    background-color: #e05aa0;
+    color: white;
+    padding: 10px;
+    border-radius: 85px;
   }
 }
-
-.navbarLinks {
-  display: flex;
-  margin-right: 30px;
-  color: white;
-  font-size: 12px;
-  font-weight: 500;
+@media (min-width: 992px) {
+  .containerDesktopNavbar button {
+    padding: 15px 30px;
+  }
 }
-
-.navbarLinks p {
-  margin: 0px 25px;
-  line-height: 36px;
-}
-
-.navbarLinks p:nth-child(3) {
-  margin-right: 40px;
-}
-
-.navbarLinks button {
-  border: none;
-  padding: 10px;
-  background-color: #e05aa0;
-  color: white;
-  font-size: 12px;
-  border-radius: 85px;
-  width: 100px;
-}
-
-/* .navbarLinks button{
-    margin-left: 40px;
-} */

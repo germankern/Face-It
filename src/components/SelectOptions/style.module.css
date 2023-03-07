@@ -1,0 +1,120 @@
+.containerSelectOptions {
+  margin-bottom: 50px;
+}
+
+.containerDropDown {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-bottom: 1px solid rgba(224, 90, 160, 1);
+}
+
+.containerDropDown::before {
+  content: url(../../assets/images/Vector.svg);
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  transition: 0.5s;
+}
+.containerDropDown.active::before {
+  top: 25px;
+  transform: rotate(-180deg);
+}
+
+.containerDropDown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+}
+
+.containerDropDown .option {
+  position: relative;
+  top: 51px;
+  background-color: #fff;
+  overflow: hidden;
+  display: none;
+}
+.containerDropDown.active .option {
+  display: block;
+}
+.containerDropDown ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.containerDropDown li {
+  padding: 10px;
+  border: 1px solid rgba(226, 228, 229, 1);
+  cursor: pointer;
+}
+
+.containerDropDown li:hover {
+  background-color: rgb(205, 200, 200);
+}
+
+.containerDropDown {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .containerDropDown input {
+    padding: 0px 12px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .containerDropDown {
+    height: 30px;
+  }
+  .containerDropDown input {
+    padding-top: 10px;
+  }
+  .containerDropDown .option {
+    top: 31px;
+    z-index: 1000000;
+  }
+  .containerDropDown::before {
+    content: url(../../assets/images/Vector.svg);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 90;
+    width: 3px;
+    height: 3px;
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerSelectOptions {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  .containerSelectOptions label {
+    line-height: 60px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerSelectOptions {
+    margin: 0;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .containerSelectOptions label {
+    line-height: 30px;
+  }
+}

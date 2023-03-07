@@ -1,0 +1,25 @@
+.textArea {
+  display: flex;
+  flex-direction: column;
+  appearance: none;
+}
+.textArea textarea {
+  appearance: none;
+  width: 90%;
+  height: 110px;
+  border: 1px solid rgba(224, 90, 160, 1);
+  padding: initial;
+  margin: initial;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 5px;
+  margin-left: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.textArea textarea:focus {
+  border: 1px solid rgb(224, 15, 123);
+}

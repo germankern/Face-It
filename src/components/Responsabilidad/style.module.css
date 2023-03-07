@@ -1,0 +1,43 @@
+.containerText {
+  margin: 10px 0px;
+}
+
+.containerText h2 {
+  font-size: 10px;
+  font-weight: 700;
+  text-decoration: underline black;
+}
+.containerList {
+  list-style: none;
+  margin: 10px 0px;
+}
+.containerList li {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.containerList li::before {
+  content: "•";
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .containerText {
+    margin: 30px 0px;
+  }
+  .containerText h2 {
+    font-size: 20px;
+  }
+  .containerList li {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .containerList {
+    margin: 30px 0px;
+  }
+  .containerText h2 {
+    font-size: 20px;
+  }
+}

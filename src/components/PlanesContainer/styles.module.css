@@ -68,6 +68,10 @@
   .planesContainer {
     padding: 0px;
   }
+  .desktopPlanes {
+    display: none;
+  }
+
   .planesContainer h2 {
     font-size: 44px;
     font-weight: 500;

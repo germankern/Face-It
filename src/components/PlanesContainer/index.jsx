@@ -4,6 +4,7 @@ import ArrowDown from "../../assets/images/ArrowDown.svg";
 import ArrowUp from "../../assets/images/ArrowUp.svg";
 import { useState } from "react";
 import { data } from "./strings";
+import PlanesDesktop from "../PlanesDesktop";
 
 const PlanesContainer = () => {
   const [selected, setSelected] = useState(null);
@@ -22,7 +23,7 @@ const PlanesContainer = () => {
         <h2>Puedes elegir el plan que más se ajuste a lo que necesitas.</h2>
         {data.map((plan, i) => {
           return (
-            <div key={plan.id}>
+            <div className={styles.desktopPlanes} key={plan.id}>
               <div className={styles.planes} onClick={() => showAcordeon(i)}>
                 <div>
                   <h3>{plan.title}</h3>
@@ -53,6 +54,7 @@ const PlanesContainer = () => {
           );
         })}
       </div>
+      <PlanesDesktop />
       <div className={styles.contactoMail}>
         <p>
           Si quieres saber más, contáctanos:{" "}

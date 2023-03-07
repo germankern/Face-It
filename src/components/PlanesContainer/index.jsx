@@ -54,7 +54,9 @@ const PlanesContainer = () => {
           );
         })}
       </div>
-      <PlanesDesktop />
+      <div className={styles.desktop}>
+        <PlanesDesktop />
+      </div>
       <div className={styles.contactoMail}>
         <p>
           Si quieres saber más, contáctanos:{" "}

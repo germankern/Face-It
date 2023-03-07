@@ -64,14 +64,13 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1250px) {
   .planesContainer {
     padding: 0px;
   }
   .desktopPlanes {
     display: none;
   }
-
   .planesContainer h2 {
     font-size: 44px;
     font-weight: 500;
@@ -81,5 +80,10 @@
   }
   .contactoMail {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 1249px) {
+  .desktop {
+    display: none;
   }
 }

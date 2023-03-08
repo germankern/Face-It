@@ -1,0 +1,123 @@
+.sectionAboutSecond {
+  width: 100%;
+}
+.itemSecondSection {
+  width: 100%;
+}
+
+.itemParagraph {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.sectionAboutSecond h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.sectionAboutSecond p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.itemSecondSection p {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.sectionAboutSecond {
+  width: 100%;
+}
+
+.itemSecondSection {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  height: 107px;
+}
+
+.containerItemImage {
+  display: flex;
+  justify-content: end;
+}
+
+#_1 {
+  background: #e05aa0;
+}
+
+.sectionAboutSecondDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sectionAboutSecond {
+    display: none;
+  }
+  .sectionAboutSecondDesktop {
+    display: block;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-right: 6%;
+    max-width: 1000px;
+  }
+  .containerDescription {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: #e05aa0;
+    position: relative;
+    align-items: center;
+    height: 200px;
+    width: 600px;
+  }
+  .containerItemImage {
+    position: absolute;
+    top: 68%;
+  }
+
+  .containerDescription h2 {
+    margin: 20px 0;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .containerDescription :nth-child(2) {
+    line-height: 22px;
+    width: 372px;
+    margin-left: 40px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  .containerDescription :nth-child(3) {
+    left: 15%;
+  }
+  .containerDescription :nth-child(5) {
+    right: 15%;
+  }
+  .showDescription {
+    display: flex;
+    background: #ffce00;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -49%;
+    left: -17%;
+    font-size: 13px;
+    align-items: center;
+  }
+  .showDescription p {
+    color: black;
+    padding: 5px;
+  }
+  .hoverDescription {
+    display: none;
+  }
+}

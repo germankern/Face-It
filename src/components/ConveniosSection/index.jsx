@@ -19,8 +19,9 @@ const ConveniosSection = () => {
       </div>
       <div className={styles.infoBgPink}>
         <p>
-          Haz que muchas personas vivan esta experiencia en tu ciudad. Elige el
-          plan que más te guste y escríbenos un correo a{" "}
+          Haz que muchas personas vivan esta experiencia en tu ciudad.{" "}
+          <br className={styles.desktop} />
+          Elige el plan que más te guste y escríbenos un correo a{" "}
           <a href="">info@faceitcitasrápidas.com</a>
         </p>
       </div>

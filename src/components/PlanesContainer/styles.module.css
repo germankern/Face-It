@@ -1,29 +1,89 @@
-@media screen and (min-width: 360px) {
+.planesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+}
+.planesContainer h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 5%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.planes {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.planes h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.planes p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.acordeonMenuHidden {
+  display: none;
+}
+.acordeonMenuShow {
+  padding: 0px 30px;
+  font-size: 13px;
+}
+.acordeonMenuShow p {
+  padding: 10px 0px;
+}
+.infoPlanes {
+  list-style: none;
+  padding-left: 0;
+}
+.infoPlanes li {
+  background-image: url("../../assets/images/Check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 8px 32px;
+  font-size: 13px;
+  line-height: 148%;
+  letter-spacing: 0.25px;
+}
+.contactoMail {
+  background-color: #ffce00;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 26px 14px;
+}
+.contactoMail a {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1250px) {
   .planesContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px;
+    padding: 0px;
+  }
+  .desktopPlanes {
+    display: none;
   }
   .planesContainer h2 {
-    font-size: 14px;
+    font-size: 44px;
     font-weight: 500;
     line-height: 125%;
-    text-align: center;
+    padding: 85px 155px 75px 155px;
+    margin: 0px;
   }
-  .planes {
-    margin: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+  .contactoMail {
+    font-size: 25px;
   }
-  .planes h3 {
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .planes p {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+}
+@media screen and (max-width: 1249px) {
+  .desktop {
+    display: none;
   }
 }

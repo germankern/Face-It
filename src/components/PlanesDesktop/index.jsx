@@ -14,7 +14,7 @@ const PlanesDesktop = () => {
     <div className={styles.planesDesktop}>
       {data.map((plan, i) => {
         return (
-          <div className={styles.planDesktop}>
+          <div className={styles.planDesktop} key={i}>
             <Image alt={plan.title} src={plan.img} width={73} height={114} />
             <h2>{plan.title}</h2>
             <p>{plan.description}</p>

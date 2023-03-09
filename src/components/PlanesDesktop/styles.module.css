@@ -1,0 +1,66 @@
+.planesDesktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+}
+.planDesktop {
+  width: 405px;
+  min-height: 1292px;
+  margin-bottom: 110px;
+  background-color: rgba(217, 217, 217, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  letter-spacing: 0.1px;
+}
+.planDesktop img {
+  margin-top: -40px;
+}
+.planDesktop h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 132%;
+  padding: 16px;
+  margin: 0px 55px;
+  border-bottom: 2px solid #ffce00;
+}
+.planDesktop p {
+  height: 418px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 158%;
+  padding: 25px 0px;
+  margin: 0px 55px;
+  border-spacing: 55px;
+}
+.listPlan {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.listPlan li {
+  background-image: url("../../assets/images/Check.svg");
+  background-repeat: no-repeat;
+  background-position: -2px center;
+  margin: 0px 48px;
+  padding: 24px 0px 24px 30px;
+  border-bottom: 2px solid #ffce00;
+  text-align: left;
+}
+.containerBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btnVerMas {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 103%;
+  border: 0;
+  cursor: pointer;
+}
+.hiddenBtn {
+  display: none;
+}

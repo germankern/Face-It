@@ -1,0 +1,53 @@
+.containerPink {
+  background-color: #e05aa0;
+  color: #ffffff;
+  padding: 32px 18px 18px 18px;
+}
+.containerPink h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.containerPink p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 18px;
+  padding: 2px;
+}
+.sectionsContainer {
+  padding: 16px;
+}
+.sectionAcordeon {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  margin: 10px;
+}
+.sectionAcordeon h3 {
+  color: #1c1b1f;
+  font-size: 16px;
+  line-height: 123.5%;
+  letter-spacing: 0.5px;
+}
+.acordeonImg {
+  display: flex;
+  justify-content: flex-end;
+}
+.acordeonH4 {
+  color: #49454f;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 126%;
+}
+.hidden {
+  display: none;
+}
+.containerYellow {
+  background-color: #ffce00;
+  color: #010101;
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 150%;
+}

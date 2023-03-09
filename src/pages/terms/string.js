@@ -1,5 +1,6 @@
 const alltext = [
   {
+    type: "Cokkies",
     title: "Cokkies:",
     allParagraph: {
       0: "El sitio web utiliza cookies para ayudar a personalizar tu experiencia en línea. Al acceder a Face It! Citas Rápidas, aceptaste utilizar las cookies necesarias.",
@@ -9,6 +10,7 @@ const alltext = [
     id: 0,
   },
   {
+    type: "Licencia",
     title: "Licencia:",
     allParagraph: {
       0: "A menos que se indique lo contrario, Face It! Citas Rápidas y/o sus licenciantes poseen los derechos de propiedad intelectual de todo el material en Face It! Citas Rápidas.",
@@ -37,6 +39,7 @@ const alltext = [
     id: 1,
   },
   {
+    type: "Hipervinculos",
     title: "Hipervínculos a nuestro contenido:",
     allParagraph: {
       0: "Las siguientes organizaciones pueden vincularse a nuestro sitio web sin aprobación previa por escrito:",
@@ -78,6 +81,7 @@ const alltext = [
     id: 2,
   },
   {
+    type: "Responsabilidad",
     title: "Responsabilidad del contenido:",
     allParagraph: {
       0: "No seremos responsables de ningún contenido que aparezca en tu sitio web. Aceptas protegernos y defendernos contra todas las reclamaciones que se presenten en tu sitio web. Ningún enlace(s) debe aparecer en ningún sitio web que pueda interpretarse como difamatorio, obsceno o criminal, o que infrinja, de otra manera viole o defienda la infracción u otra violación de los derechos de terceros.",
@@ -85,6 +89,7 @@ const alltext = [
     id: 3,
   },
   {
+    type: "Reserva",
     title: "Reserva de derechos:",
     allParagraph: {
       0: "Nos reservamos el derecho de solicitar que elimines todos los enlaces o cualquier enlace en particular a nuestro sitio web. Apruebas eliminar de inmediato todos los enlaces a nuestro sitio web cuando se solicite. También nos reservamos el derecho de modificar estos términos y condiciones y su política de enlaces en cualquier momento. Al vincular continuamente a nuestro sitio web, aceptas estar vinculado y seguir estos términos y condiciones de vinculación.",

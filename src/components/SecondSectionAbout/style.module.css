@@ -35,14 +35,26 @@
   display: flex;
   margin: 20px 0;
   align-items: center;
-  height: 107px;
+  height: 142px;
 }
 
 .containerItemImage {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 #_1 {
   background: #e05aa0;
+}
+
+@media (min-width: 380px) {
+  .itemSecondSection {
+    height: 107px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionAboutSecond {
+    display: none;
+  }
 }

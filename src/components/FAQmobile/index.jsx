@@ -31,7 +31,7 @@ const FAQmobile = () => {
       <div className={styles.sectionsContainer}>
         {info.map((section, i) => {
           return (
-            <div className={styles.sectionAcordeon}>
+            <div key={section.id} className={styles.sectionAcordeon}>
               <div onClick={() => showAcordeon(i)}>
                 <h3>{section.title}</h3>
                 <div className={styles.acordeonImg}>
@@ -44,7 +44,7 @@ const FAQmobile = () => {
                 <div
                   className={selected === i ? styles.showInfo : styles.hidden}
                 >
-                  <div>{section.acordeonInfo}</div>
+                  <div>{section.acordeonContent}</div>
                 </div>
               </div>
             </div>

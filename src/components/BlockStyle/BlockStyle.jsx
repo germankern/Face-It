@@ -6,7 +6,7 @@ const BlockStyle = ({ parrafo, email, bold, title }) => {
 
   return (
     <>
-      {bold ? (
+      {bold && !title ? (
         <div className={styles.containerBlockStyle}>
           <p dangerouslySetInnerHTML={{ __html: boldParragraph }}></p>
         </div>

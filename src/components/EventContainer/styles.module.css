@@ -1,3 +1,17 @@
+.eventListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.eventListContainer div:nth-child(1) img {
+  object-fit: cover;
+}
+.eventListContainer div:nth-child(3) img {
+  object-fit: cover;
+}
+
 @media (min-width: 510px) {
   .coupleContainer {
     width: 510px !important;
@@ -13,6 +27,9 @@
 }
 
 @media (min-width: 768px) {
+  .eventListContainer {
+    flex-direction: row;
+  }
   .coupleContainer h2 {
     height: 60px !important;
     width: 240px !important;

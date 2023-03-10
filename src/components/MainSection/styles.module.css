@@ -89,6 +89,9 @@
     background-size: 100% 255px;
     background-position-x: 10px;
   }
+  .containerMainSection {
+    background-size: 100%;
+  }
 }
 
 @media (min-width: 560px) {

@@ -1,0 +1,85 @@
+.containerFormComentarios {
+  width: 88%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.containerComentarios h1 {
+  font-size: 20px;
+  text-align: start;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.containerComentarios p {
+  text-align: start;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.containerComentarios textarea {
+  width: 100%;
+}
+
+.containerComentarios .containerButtom {
+  margin-top: 55px;
+}
+
+.containerFormComentarios label h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.containerFormComentarios label {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.containerFormComentarios div:nth-child(1) input {
+  width: 100%;
+}
+@media (min-width: 660px) {
+  .containerFormComentarios div:nth-child(1) {
+    flex-direction: column;
+  }
+  .containerFormComentarios div:nth-child(1) label {
+    line-height: 18px;
+  }
+  .containerFormComentarios div:nth-child(1) input {
+    height: 25px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerComentarios div:nth-child(1) {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .containerFormComentarios div:nth-child(2) {
+    margin-top: 50px;
+  }
+  .containerComentarios h1 {
+    font-size: 44px;
+  }
+  .containerComentarios p {
+    font-size: 20px;
+  }
+  .containerFormComentarios div:nth-child(1) label {
+    font-size: 20px;
+  }
+  .containerFormComentarios label h2 {
+    font-size: 20px;
+  }
+  .containerFormComentarios div:nth-child(1) input {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerFormComentarios {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

@@ -1,10 +1,13 @@
 import Image from "next/image";
 import HamburgerIcon from "../../assets/images/HamburgerIcon.svg";
-
-const Hamburger = () => {
+import styles from "./style.module.css";
+const Hamburger = ({ setToggle }) => {
   return (
     <Image
-      style={{ marginLeft: "19px", marginRight: "21px" }}
+      className={`${styles.hamburger}`}
+      onClick={() => {
+        setToggle("");
+      }}
       src={HamburgerIcon}
       alt="Hamburger"
     />

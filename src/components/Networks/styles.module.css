@@ -65,3 +65,9 @@
     justify-self: start;
   }
 }
+
+@media (min-width: 992px) {
+  .containerNetworks {
+    margin-right: 0;
+  }
+}

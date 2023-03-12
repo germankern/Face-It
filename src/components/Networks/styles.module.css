@@ -59,7 +59,7 @@
     grid-column: 1/2;
   }
   .containerNetworks img:nth-child(4) {
-    justify-self: end;
+    justify-self: flex-end;
   }
   .containerNetworks img:nth-child(2) {
     justify-self: start;

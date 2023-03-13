@@ -19,7 +19,10 @@ const FAQdesktop = () => {
       <div className={styles.sectionsContainerD}>
         <div className={styles.sectionFAQ}>
           <Link href={"/eventosFAQ"}>
-            <Image src={FAQeventos} />
+            <Image
+              src={FAQeventos}
+              alt={"icono representativo a organizar eventos"}
+            />
             <h3>Eventos</h3>
             <p>
               Descubre más sobre
@@ -30,7 +33,10 @@ const FAQdesktop = () => {
         </div>
         <div className={styles.sectionFAQ}>
           <Link href={"/inscripcionesFAQ"}>
-            <Image src={FAQinscripciones} />
+            <Image
+              src={FAQinscripciones}
+              alt={"planilla representativo a inscripciones"}
+            />
             <h3>Inscripciones</h3>
             <p>
               Qué hacer para
@@ -41,7 +47,10 @@ const FAQdesktop = () => {
         </div>
         <div className={styles.sectionFAQ}>
           <Link href={"/recomendacionesFAQ"}>
-            <Image src={FAQrecomendaciones} />
+            <Image
+              src={FAQrecomendaciones}
+              alt={"foco representando a recomendaciones e ideas"}
+            />
             <h3>Recomendaciones</h3>
             <p>
               Tips y consejos para

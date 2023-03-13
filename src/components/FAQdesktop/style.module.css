@@ -1,0 +1,61 @@
+.containerPinkD {
+  color: #ffffff;
+  background-color: #e05aa0;
+  padding: 38px;
+}
+.containerPinkD h2 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 15px;
+}
+.containerPinkD p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+.sectionsContainerD {
+  display: flex;
+  justify-content: center;
+}
+.sectionFAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 330px;
+  height: 330px;
+  margin: 70px 16px;
+  border: 1px solid #979797;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.sectionFAQ h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 132%;
+  padding: 20px;
+}
+.sectionFAQ p {
+  color: #616161;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 158%;
+}
+.containerYellowD {
+  color: #010101;
+  background: #ffce00;
+  text-align: center;
+  font-size: 25px;
+  line-height: 150%;
+  padding: 12px;
+}
+.containerYellowD h4 {
+  font-weight: 700;
+}
+.containerYellowD a {
+  font-weight: 700;
+  text-decoration: underline;
+}

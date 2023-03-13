@@ -25,6 +25,7 @@ const Survey = () => {
           {alltext.map((section, key) => (
             <TextSection
               key={key}
+              type={section.type}
               id={section.id}
               title={section.title}
               allParagraph={section.allParagraph}

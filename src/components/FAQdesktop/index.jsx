@@ -4,20 +4,9 @@ import Link from "next/link";
 import FAQeventos from "../../assets/images/FAQeventos.svg";
 import FAQinscripciones from "../../assets/images/FAQinscripciones.svg";
 import FAQrecomendaciones from "../../assets/images/FAQrecomendaciones.svg";
-// import { useState } from "react";
-// import { info } from "./strings";
+import ContainerYellowFAQ from "../ContainerYellowFAQ";
 
 const FAQdesktop = () => {
-  // const [selected, setSelected] = useState(null);
-
-  // const showAcordeon = (i) => {
-  //   if (selected == i) {
-  //     return setSelected(null);
-  //   }
-
-  //   setSelected(i);
-  // };
-
   return (
     <>
       <div className={styles.containerPinkD}>
@@ -29,7 +18,7 @@ const FAQdesktop = () => {
       </div>
       <div className={styles.sectionsContainerD}>
         <div className={styles.sectionFAQ}>
-          <Link href={"/convenios"}>
+          <Link href={"/eventosFAQ"}>
             <Image src={FAQeventos} />
             <h3>Eventos</h3>
             <p>
@@ -40,7 +29,7 @@ const FAQdesktop = () => {
           </Link>
         </div>
         <div className={styles.sectionFAQ}>
-          <Link href={"/convenios"}>
+          <Link href={"/inscripcionesFAQ"}>
             <Image src={FAQinscripciones} />
             <h3>Inscripciones</h3>
             <p>
@@ -51,7 +40,7 @@ const FAQdesktop = () => {
           </Link>
         </div>
         <div className={styles.sectionFAQ}>
-          <Link href={"/convenios"}>
+          <Link href={"/recomendacionesFAQ"}>
             <Image src={FAQrecomendaciones} />
             <h3>Recomendaciones</h3>
             <p>
@@ -62,16 +51,7 @@ const FAQdesktop = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.containerYellowD}>
-        <h4>¿No encontraste lo que estabas buscando?</h4>
-        <p>
-          Envía tu consulta a{" "}
-          <a href="https://twitter.com" target={"_blank"}>
-            info@faceitcitasrápidas.com
-          </a>{" "}
-          para que podamos responder tus dudas.
-        </p>
-      </div>
+      <ContainerYellowFAQ />
     </>
   );
 };

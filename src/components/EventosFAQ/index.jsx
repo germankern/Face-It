@@ -49,9 +49,8 @@ const EventosFAQ = () => {
           vez en el evento.
         </p>
         <div className={styles.linksEvent}>
-          <a href="#">Mostrar encuentros anteriores</a>
+          <a>Mostrar encuentros anteriores</a>
         </div>
-
         <h3>Cómo contactar nuevamente a un participante</h3>
         <p>
           Al finalizar el evento puedes informar al organizador con qué

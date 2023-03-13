@@ -1,17 +1,14 @@
 import React from "react";
 import FAQmobile from "@/components/FAQmobile";
 import FAQdesktop from "@/components/FAQdesktop";
-import styles from "./style.module.css";
+import mediaSelector from "@/hoc/mediaSelector";
 
 export default function FaqPage() {
+  const RenderQuery = mediaSelector(FAQmobile, FAQdesktop);
+
   return (
     <>
-      <div className={styles.mobileFAQ}>
-        <FAQmobile />
-      </div>
-      <div className={styles.desktopFAQ}>
-        <FAQdesktop />
-      </div>
+      <RenderQuery />
     </>
   );
 }

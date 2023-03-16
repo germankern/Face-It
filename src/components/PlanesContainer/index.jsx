@@ -45,7 +45,7 @@ const PlanesContainer = () => {
               >
                 <p>{plan.acordeon}</p>
                 {plan.servicios.map((plan, i) => (
-                  <ul className={styles.infoPlanes}>
+                  <ul className={styles.infoPlanes} key={i}>
                     <li key={i}>{plan}</li>
                   </ul>
                 ))}

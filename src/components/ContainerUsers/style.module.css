@@ -1,0 +1,43 @@
+.containerUsersForm {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #e2e4e5;
+  padding: 11px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bodyUsers {
+  display: flex;
+  flex-direction: column;
+}
+.buttonDelete {
+  display: flex;
+  align-items: center;
+}
+.buttonDelete img {
+  width: 23px;
+  height: 26px;
+}
+.bodyUsers #_1 {
+  font-weight: 500;
+  font-size: 14px;
+}
+.bodyUsers #_2 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .bodyUsers {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+  }
+  .bodyUsers #_2 {
+    margin-top: 0;
+    width: 60%;
+  }
+}

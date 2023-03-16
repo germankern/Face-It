@@ -1,0 +1,14 @@
+.containerAddUsers {
+  width: 95%;
+}
+.containerDescripitionUser {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .containerDescripitionUser {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

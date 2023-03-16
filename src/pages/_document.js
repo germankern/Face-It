@@ -11,6 +11,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
+        <div id="__modal" className="modalexample"></div>
         <NextScript />
       </body>
     </Html>

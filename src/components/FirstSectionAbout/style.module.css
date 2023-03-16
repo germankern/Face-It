@@ -1,0 +1,141 @@
+.sectionAbout {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.containerImagesAbout {
+  width: 100%;
+}
+
+.sectionAbout h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.containerImagesAbout {
+  height: 300px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.containerImagesAbout img:nth-child(1) {
+  position: absolute;
+  z-index: 300;
+  top: 74px;
+  right: 45%;
+  transform: translate3d(-5%, 0, 0);
+}
+
+.containerImagesAbout img:nth-child(2) {
+  position: absolute;
+  z-index: 200;
+  left: 45%;
+  transform: translate3d(5%, 0, 0);
+}
+
+.sectionAbout p {
+  margin: 10px 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sectionAbout > p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.sectionAbout span {
+  display: none;
+  margin-left: 7px;
+}
+@media (min-width: 768px) {
+  .sectionAbout h1 {
+    font-size: 24px;
+  }
+  .sectionAbout span {
+    display: inline-block;
+  }
+  .sectionAbout h1 span {
+    position: relative;
+  }
+  .sectionAbout h1 span img {
+    width: 161px;
+    height: 10px;
+    position: absolute;
+    bottom: 30%;
+  }
+  .sectionAbout p {
+    font-size: 13px;
+  }
+  .sectionAbout .containerBody {
+    display: flex;
+  }
+  .containerImagesAbout {
+    width: 230%;
+  }
+  .containerImagesAbout img:nth-child(1) {
+    top: 74px;
+    right: 45%;
+    transform: translate3d(-5%, 0, 0);
+  }
+
+  .containerImagesAbout img:nth-child(2) {
+    left: 45%;
+    transform: translate3d(5%, 0, 0);
+  }
+}
+
+@media (min-width: 873px) {
+  .containerImagesAbout {
+    width: 170%;
+  }
+  .sectionAbout h1 {
+    font-size: 34px;
+  }
+  .sectionAbout p {
+    font-size: 18px;
+  }
+
+  .sectionAbout span {
+    margin-left: 15px;
+  }
+  .sectionAbout h1 span img {
+    width: 230px;
+    height: 10px;
+    bottom: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionAbout {
+    width: 100%;
+    margin: 0;
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  .containerImagesAbout img:nth-child(1) {
+    top: 120px;
+    right: 45%;
+    width: 200px;
+    height: 250px;
+  }
+
+  .containerImagesAbout img:nth-child(2) {
+    left: 45%;
+    top: 20px;
+    width: 220px;
+    height: 250px;
+  }
+  .containerImagesAbout {
+    height: 400px;
+  }
+  .aboutParagraphs {
+    margin-right: 20px;
+  }
+  .containerBody {
+    align-items: center;
+  }
+}

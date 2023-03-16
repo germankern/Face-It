@@ -47,7 +47,7 @@
   }
 
   .containerNetworks img {
-    width: 25px;
+    width: 20px;
     height: 25px;
     grid-column: 1/2;
     grid-row: 2/4;
@@ -63,5 +63,14 @@
   }
   .containerNetworks img:nth-child(2) {
     justify-self: start;
+  }
+}
+
+@media (min-width: 868px) {
+  .containerNetworks img {
+    width: 25px;
+    height: 25px;
+    grid-column: 1/2;
+    grid-row: 2/4;
   }
 }

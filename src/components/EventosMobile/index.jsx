@@ -1,10 +1,10 @@
 import Image from "next/image";
 import style from "./style.module.css";
-import Velas from "../../assets/images/EventosImage01.svg";
-import Logo from "../../assets/images/EventosImage02.svg";
-import Parejas from "../../assets/images/EventosImage03.svg";
-import Mesa from "../../assets/images/EventosImage04.svg";
-import Tragos from "../../assets/images/EventosImage05.svg";
+import Velas from "../../assets/images/eventos-01-velas.jpg";
+import Brand from "../../assets/images/eventos-02-brand.jpg";
+import Parejas from "../../assets/images/eventos-03-parejas.jpg";
+import Mesa from "../../assets/images/eventos-04-mesa.jpg";
+import Tragos from "../../assets/images/eventos-05-tragos.jpg";
 import { useEffect, useState } from "react";
 import { strings } from "./strings";
 
@@ -32,27 +32,27 @@ const EventosMobile = () => {
         <h2>Nuestros Eventos</h2>
       </div>
       <section className={style.sectionsImg}>
-        <div>
+        <div className={style.divImages}>
           <Image src={Velas} alt={"vela envendida sobre mesa"} />
         </div>
         <div className={style.carrouselComments}>
           <h3>{strings[currentString]}</h3>
         </div>
-        <div>
-          <Image src={Logo} alt={"vela envendida sobre mesa"} />
+        <div className={style.divImages}>
+          <Image src={Brand} alt={"vela envendida sobre mesa"} />
         </div>
         <div className={style.videoGifs}>
           <video autoPlay muted playsInline onEnded={handleVideoEnd}>
             <source src={"/VideoUno.mp4"} type={"video/mp4"} />
           </video>
         </div>
-        <div>
+        <div className={style.divImages}>
           <Image src={Parejas} alt={"vela envendida sobre mesa"} />
         </div>
-        <div>
+        <div className={style.divImages}>
           <Image src={Mesa} alt={"vela envendida sobre mesa"} />
         </div>
-        <div>
+        <div className={style.divImages}>
           <Image src={Tragos} alt={"vela envendida sobre mesa"} />
         </div>
         <div className={style.videoGifs}>

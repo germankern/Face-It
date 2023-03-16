@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../../assets/images/eventos-section-mobile.jpg");
+  background-image: url("../../assets/images/eventos-section-header2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
-  min-height: 225px;
+  min-height: 215px;
   padding: 12px;
 }
 .sectionEventos::after {
@@ -23,7 +23,6 @@
 }
 .sectionEventos h2 {
   z-index: 100;
-  margin-bottom: 12px;
   font-size: 26px;
   font-weight: 500;
   line-height: 125%;
@@ -47,7 +46,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 210px;
+  width: 260px;
+  height: 260px;
   font-size: 21px;
   font-weight: 400;
   line-height: 146%;
@@ -61,4 +61,16 @@
   height: auto;
   object-fit: cover;
   margin-bottom: 16px;
+}
+.divImages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 100%;
+}
+.divImages img {
+  max-width: 512px;
+  max-height: 360px;
+  object-fit: cover;
 }

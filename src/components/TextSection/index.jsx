@@ -12,7 +12,7 @@ const getComponent = (type) =>
     : type === "Licencia"
     ? Licencia
     : type === "Hipervinculos"
-    ? Hipervinculos
+    ? Hipervínculos
     : type === "Responsabilidad"
     ? Responsabilidad
     : type === "Reserva"

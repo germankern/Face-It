@@ -1,7 +1,7 @@
 const alltext = [
   {
-    type: "Cokkies",
-    title: "Cokkies:",
+    type: "Cookies",
+    title: "Cookies:",
     allParagraph: {
       0: "El sitio web utiliza cookies para ayudar a personalizar tu experiencia en línea. Al acceder a Face It! Citas Rápidas, aceptaste utilizar las cookies necesarias.",
       1: "Una cookie es un archivo de texto que un servidor de páginas web coloca en tu disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a tu computadora. Las cookies se te asignan de forma exclusiva y solo un servidor web en el dominio que emitió la cookie puede leerlas.",

@@ -1,5 +1,5 @@
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
-import FirstSectionAbout from "@/components/FirsSectionAbout";
+import FirstSectionAbout from "@/components/FirstSectionAbout";
 import SecondSectionAbout from "@/components/SecondSectionAbout";
 import styles from "./style.module.css";
 const SobreNosotras = () => {

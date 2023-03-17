@@ -20,3 +20,10 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 992px) {
+  .bodyFooter {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

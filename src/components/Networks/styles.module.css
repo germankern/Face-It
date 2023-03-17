@@ -59,13 +59,18 @@
     grid-column: 1/2;
   }
   .containerNetworks img:nth-child(4) {
-    justify-self: end;
+    justify-self: flex-end;
   }
   .containerNetworks img:nth-child(2) {
     justify-self: start;
   }
 }
 
+@media (min-width: 992px) {
+  .containerNetworks {
+    margin-right: 0;
+  }
+}
 @media (min-width: 868px) {
   .containerNetworks img {
     width: 25px;

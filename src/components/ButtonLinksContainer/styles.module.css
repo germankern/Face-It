@@ -27,6 +27,9 @@
     min-width: 104px;
     text-align: center;
   }
+  .containerMainParagraph {
+    display: none;
+  }
 }
 
 @media (min-width: 510px) {
@@ -45,5 +48,11 @@
     line-height: 25px;
     font-size: 12px;
     margin-top: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerMainParagraph {
+    display: block;
   }
 }

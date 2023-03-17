@@ -1,0 +1,172 @@
+.sectionAboutSecondDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sectionAboutSecond {
+    display: none;
+  }
+  .sectionAboutSecondDesktop {
+    display: block;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-right: 6%;
+    max-width: 1000px;
+  }
+  .containerDescription {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: #e05aa0;
+    position: relative;
+    align-items: center;
+    height: 200px;
+    width: 600px;
+  }
+  .containerItemImage {
+    position: absolute;
+    top: 80%;
+  }
+
+  .containerItemImage img {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .containerDescription h2 {
+    margin: 20px 0;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .containerDescription p:nth-child(2) {
+    line-height: 22px;
+    width: 372px;
+    margin-left: 40px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  .containerDescription :nth-child(3) {
+    left: 20%;
+  }
+  .containerDescription :nth-child(5) {
+    right: 20%;
+  }
+  .showDescription {
+    display: flex;
+    background: #ffce00;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -49%;
+    left: -17%;
+    font-size: 13px;
+    align-items: center;
+  }
+  .showDescription p {
+    color: black;
+    padding: 5px;
+    position: absolute;
+    font-weight: 500;
+  }
+  .showDescription {
+    z-index: 100;
+  }
+  .hoverDescription {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .empatia {
+    z-index: 200;
+    opacity: 1;
+    transition: 1s ease-in;
+  }
+  .honestidad {
+    z-index: 200;
+    opacity: 1;
+    transition: 1s ease-in;
+  }
+  .seguridad {
+    z-index: 200;
+    opacity: 1;
+    transition: 1s ease-in;
+  }
+  .showDescription p:nth-child(2) {
+    margin: 0;
+    width: 100%;
+    font-weight: 500;
+  }
+  .showDescription p:nth-child(3) {
+    margin: 0;
+    width: 100%;
+    left: 0;
+    font-weight: 500;
+  }
+  .containerItemImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .containerDescription h2 span {
+    position: relative;
+  }
+  .containerDescription h2 span img {
+    position: absolute;
+    width: 161px;
+    height: 10px;
+    right: 100%;
+    top: 50%;
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: 873px) {
+  .sectionAboutSecondDesktop {
+    margin-left: 10%;
+  }
+  .containerDescription {
+    height: 200px;
+  }
+  .containerDescription h2 {
+    font-size: 24px;
+  }
+  .containerDescription h2 span {
+    position: relative;
+  }
+  .containerDescription h2 span img {
+    position: absolute;
+    width: 192px;
+    height: 10px;
+    top: 40%;
+  }
+
+  .containerDescription p:nth-child(2) {
+    font-size: 18px;
+  }
+  .showDescription {
+    width: 282px;
+    height: 288px;
+
+    bottom: -89%;
+    left: -30%;
+  }
+  .containerItemImage {
+    top: 90%;
+  }
+  .showDescription p {
+    font-size: 18px;
+  }
+  .showDescription p:nth-child(2) {
+    font-size: 18px;
+  }
+  .showDescription p:nth-child(3) {
+    font-size: 18px;
+  }
+}

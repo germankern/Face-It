@@ -24,6 +24,10 @@
     display: flex;
     justify-content: space-between;
     height: 93px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background: none;
   }
   .containerMobileNavbar {
     display: none;

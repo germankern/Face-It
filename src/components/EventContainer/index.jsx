@@ -26,40 +26,19 @@ const events = [
     parrafo: "Santiago de Chile",
   },
 ];
-const copupleStyle = {
-  width: "358px",
-  height: "150px",
-  borderTopLeftRadius: "20px",
-  overflow: "hidden",
-  position: "relative",
-  margin: "0 auto",
-};
-
-const copupleStyle2 = {
-  width: "100%",
-  height: "100%",
-  objectFit: "cover",
-  objectPosition: "bottom -10px right 50%",
-};
-
-const titleStyle = {
-  position: "absolute",
-  background: "rgba(255, 206, 0, 1)",
-  width: "100%",
-  height: "35px",
-  top: "115px",
-  textAlign: "center",
-  fontWeight: "500",
-  fontSize: "14px",
-  lineHeight: "35px",
-};
 
 const EventContainer = () => {
   return (
     <div className={styles.eventContainer}>
-      <div className={styles.coupleContainer} style={copupleStyle}>
-        <Image src={meet} alt="couple meeting" style={copupleStyle2} />
-        <h2 style={titleStyle}>Conoce Nuestros Eventos e inscríbite</h2>
+      <div className={`${styles.coupleContainer} ${styles.coupleStyle}`}>
+        <Image
+          src={meet}
+          alt="couple meeting"
+          className={styles.coupleStyle2}
+        />
+        <h2 className={styles.titleStyle}>
+          Conoce Nuestros Eventos e inscríbite
+        </h2>
       </div>
       <div className={styles.eventListContainer}>
         {events.map((item, index) => (

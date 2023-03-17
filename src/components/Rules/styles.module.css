@@ -32,3 +32,9 @@
     flex: 1;
   }
 }
+
+@media (min-width: 992px) {
+  .containerRules {
+    flex: 1.5;
+  }
+}

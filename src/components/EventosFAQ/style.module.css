@@ -1,0 +1,27 @@
+.eventosContainer {
+  padding: 48px;
+}
+.eventosContainer h2 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+.eventosContainer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 132%;
+  margin: 32px 0px;
+}
+.eventosContainer p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 158%;
+}
+.linksEvent {
+  color: #e05aa0;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 32px 0px;
+}

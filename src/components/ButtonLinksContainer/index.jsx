@@ -22,7 +22,7 @@ const parrafo = [
 
 const Parrafo = (props) => {
   return (
-    <p>
+    <p className={styles.containerMainParagraph}>
       {props.parrafo1} <br />
       {props.parrafo2}
     </p>

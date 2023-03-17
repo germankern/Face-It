@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 
 const Parrafo = (props) => {
-  return <p>{props.parrafo}</p>;
+  return <p className={styles.containerEventParagraph}>{props.parrafo}</p>;
 };
 
 const Event = (props) => {

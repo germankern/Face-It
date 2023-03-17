@@ -4,7 +4,13 @@ const Button = ({ name, type, span }) => {
     <div
       className={`${styles.containerButtom} ${
         type === "survey" ? styles.buttonSurvey : ""
-      } ${type === "submit" ? styles.buttonSubmit : ""}`}
+      } ${type === "submit" ? styles.buttonSubmit : ""} 
+          ${
+            type === "submitcomentario"
+              ? styles.buttonSubmit + " " + styles.buttonSubmitComentario
+              : ""
+          }
+     `}
     >
       <button type="button">
         <span>{span}</span>

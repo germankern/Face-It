@@ -1,0 +1,49 @@
+.containerStars {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  stroke: #ffce00;
+  font-size: 40px;
+}
+.iconFill:hover {
+  fill: #eed369;
+}
+
+.iconFill {
+  fill: #ffce00;
+  font-size: 40px;
+}
+.containerStars {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .containerStars {
+    margin-bottom: 50px;
+  }
+  .containerStars label {
+    font-size: 20px;
+  }
+  .containerStars div:nth-child(2) {
+    margin-top: 0px;
+  }
+  .icon {
+    width: 50px;
+    font-size: 40px;
+  }
+  .iconFill {
+    width: 50px;
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .containerStars {
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .containerSvgStars {
+    margin-top: 0;
+  }
+}

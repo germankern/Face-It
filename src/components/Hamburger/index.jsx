@@ -5,9 +5,7 @@ const Hamburger = ({ setToggle }) => {
   return (
     <Image
       className={`${styles.hamburger}`}
-      onClick={() => {
-        setToggle("");
-      }}
+      onClick={() => setToggle("")}
       src={HamburgerIcon}
       alt="Hamburger"
     />

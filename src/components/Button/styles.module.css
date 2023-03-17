@@ -60,6 +60,10 @@
   font-size: 20px;
 }
 
+.buttonSubmitComentario {
+  margin-top: 60px;
+}
+
 @media (min-width: 575px) {
   /* BackgroundMain */
   .buttonSubmit button {

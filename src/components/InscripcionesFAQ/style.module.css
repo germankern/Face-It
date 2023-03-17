@@ -1,0 +1,26 @@
+.inscripcionesContainer {
+  padding: 48px 36px;
+}
+.inscripcionesContainer h2 {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+.inscripcionesContainer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 132%;
+  margin: 32px 0px 16px 0px;
+}
+.inscripcionesContainer p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 158%;
+  padding: 2px;
+}
+.inscripcionesContainer a {
+  color: #e05aa0;
+  font-size: 20px;
+  text-decoration: underline;
+}

@@ -2,12 +2,22 @@ import styles from "./styles.module.css";
 import Hamburger from "../Hamburger";
 import Brand from "../Brand";
 import ContainerMenuList from "../ContainerMenuList";
+import { useRouter } from "next/router";
 import { useState } from "react";
 const Navbar = () => {
+  const router = useRouter();
   const [toggle, setToggle] = useState("");
+  const home =
+    router.pathname === "/" || router.pathname === "/convenios"
+      ? "homeNavbarDekstop"
+      : " ";
   return (
     <>
-      <div className={styles.containerDesktopNavbar}>
+      <div
+        className={`${styles.containerDesktopNavbar} ${
+          home != " " ? styles[home] : " "
+        }`}
+      >
         <Brand />
         <div className={styles.navbarLinks}>
           <p>Conocenos</p>

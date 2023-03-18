@@ -5,14 +5,7 @@ import Button from "../Button";
 import { ClapSpinner } from "react-spinners-kit";
 
 import { useEffect, useState } from "react";
-const SucessMessage = () => {
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+const SucessMessage = ({ loading }) => {
   return (
     <>
       <div className={styles.containerSucessMessage}>
@@ -24,7 +17,7 @@ const SucessMessage = () => {
             loading={loading}
           />
         ) : (
-          <>
+          <div className={styles.popupContainerStyle}>
             <h1>¡Gracias por unirte!</h1>
             <p>
               Buscaremos un evento basado en tus respuestas. Luego recibirás
@@ -34,7 +27,7 @@ const SucessMessage = () => {
             <Image src={imageSuccess} alt="imageSucess"></Image>
 
             <Button name={"Volver"} type={"button"}></Button>
-          </>
+          </div>
         )}
       </div>
     </>

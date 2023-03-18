@@ -9,6 +9,7 @@ const AddUser = ({ placeHolder, question1, options, question2, onChange }) => {
   const [usersform, setusersForm] = useState([]);
   const [user, setuser] = useState("");
   const [username, setUsername] = useState("");
+
   return (
     <div className={styles.containerAddUsers}>
       <h2>¿Dónde te encontramos?</h2>

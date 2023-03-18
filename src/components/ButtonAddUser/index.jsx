@@ -1,3 +1,4 @@
+import { use } from "react";
 import styles from "./style.module.css";
 const ButtonAddUser = ({
   name,
@@ -12,7 +13,11 @@ const ButtonAddUser = ({
 }) => {
   const users2 = [...users];
   function addUser() {
-    if (placeHolder === "Facebook" && users2.length === 0) {
+    if (
+      placeHolder === "Facebook" &&
+      users2.length === 0 &&
+      user === "Facebook"
+    ) {
       const objectUser = { network: "Facebook", name: username };
       users2.push(objectUser);
       setusersForm(users2);
@@ -22,14 +27,23 @@ const ButtonAddUser = ({
         users2.push(objectUser);
         setusersForm(users2);
       } else {
-        if ((user != "" && users2.length !== 0) || placeHolder === "Facebook") {
+        if (user != "") {
           const objectUser = { network: user, name: username };
           users2.push(objectUser);
           setusersForm(users2);
+        } else {
+          if (
+            (user != "" && users2.length !== 0) ||
+            placeHolder === "Facebook"
+          ) {
+            const objectUser = { network: user, name: username };
+            users2.push(objectUser);
+            setusersForm(users2);
+          }
         }
       }
     }
-    onChange("networks", [...users2]);
+    onChange("Networks", [...users2]);
   }
   return (
     <div

@@ -3,9 +3,11 @@ import ModalCompleted from "../ModalCompleted";
 import SucessMessage from "../SucessMessage";
 import styles from "./styles.module.css";
 
-const Button = ({ name, type, span }) => {
+const Button = ({ name, type, span, setActiveModal }) => {
   const buttonType = type === "submit" ? "submit" : "button";
-  const [activeModal, setActiveModal] = useState(false);
+  const verficationSubmit = () => {
+    type === "submit" ? setActiveModal(true) : null;
+  };
   return (
     <div
       className={`${styles.containerButtom} ${
@@ -18,15 +20,10 @@ const Button = ({ name, type, span }) => {
           }
      `}
     >
-      <button type={buttonType} onClick={() => setActiveModal(true)}>
+      <button type={buttonType} onClick={verficationSubmit}>
         <span>{span}</span>
         {name}
       </button>
-      {activeModal && type === "submit" ? (
-        <ModalCompleted>
-          <SucessMessage />
-        </ModalCompleted>
-      ) : null}
     </div>
   );
 };

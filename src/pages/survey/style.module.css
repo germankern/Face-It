@@ -7,6 +7,12 @@
   margin-top: 20px;
   font-weight: 500;
 }
+.errorContainer {
+  text-align: center;
+  color: red;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   .mainContainer {
     margin-left: 50px;

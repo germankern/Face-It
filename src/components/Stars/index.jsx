@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
-const Stars = ({ score, setScore }) => {
+const Stars = ({ score, setScore, onChange, name }) => {
   return (
     <>
       <div className={styles.containerStars}>
@@ -13,6 +13,7 @@ const Stars = ({ score, setScore }) => {
                 className={styles.iconFill}
                 onClick={() => {
                   setScore(index);
+                  onChange(name, index);
                 }}
               />
             ) : (
@@ -21,6 +22,7 @@ const Stars = ({ score, setScore }) => {
                 className={styles.iconFill}
                 onClick={() => {
                   setScore(index + 1);
+                  onChange(name, index + 1);
                 }}
               />
             );

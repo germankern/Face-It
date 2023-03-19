@@ -18,6 +18,8 @@ import {
   infoBlockStyle,
 } from "./strings";
 import styles from "./style.module.css";
+const URL_SURVEY_GOOGLE_SHEET =
+  "https://script.google.com/macros/s/AKfycbwhYFih1ebdS10_Po313bc7zVXCg6pH-V8SvVbUVs2JFL9AglVpXn34aQSymuy5Cw2U/exec";
 
 const Survey = () => {
   const initialState = {
@@ -42,7 +44,7 @@ const Survey = () => {
       setLoading(true);
       setError(null);
       try {
-        formServicepostToGoogleScript(data);
+        formServicepostToGoogleScript(data, URL_SURVEY_GOOGLE_SHEET);
       } catch (error) {
         setError(true);
       }

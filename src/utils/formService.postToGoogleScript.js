@@ -1,4 +1,4 @@
-const formServicepostToGoogleScript = (formData) => {
+const formServicepostToGoogleScript = (formData, url) => {
   formData.Networks
     ? (formData.Networks = formData.Networks.map(
         (network) => `${network.name} (${network.network})`
@@ -13,13 +13,10 @@ const formServicepostToGoogleScript = (formData) => {
     console.log(entry[0] + ": " + entry[1]);
   }
 
-  fetch(
-    "https://script.google.com/macros/s/AKfycbwhYFih1ebdS10_Po313bc7zVXCg6pH-V8SvVbUVs2JFL9AglVpXn34aQSymuy5Cw2U/exec",
-    {
-      method: "POST",
-      body: formData2,
-    }
-  );
+  fetch(url, {
+    method: "POST",
+    body: formData2,
+  });
 };
 
 export { formServicepostToGoogleScript };

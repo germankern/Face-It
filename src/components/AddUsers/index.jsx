@@ -9,6 +9,12 @@ const AddUser = ({ placeHolder, question1, options, question2, onChange }) => {
   const [usersform, setusersForm] = useState([]);
   const [user, setuser] = useState("");
   const [username, setUsername] = useState("");
+  const handleDeleteData = (id) => {
+    const dataForm = [...usersform];
+    dataForm.splice(id, 1);
+    setusersForm(dataForm);
+    onChange("networks", [...dataForm]);
+  };
 
   return (
     <div className={styles.containerAddUsers}>
@@ -19,9 +25,7 @@ const AddUser = ({ placeHolder, question1, options, question2, onChange }) => {
           id={index}
           users={item.network}
           username={item.name}
-          usersform={usersform}
-          setusersForm={setusersForm}
-          onChange={onChange}
+          onDeleteData={handleDeleteData}
         />
       ))}
       <div className={styles.containerDescripitionUser}>

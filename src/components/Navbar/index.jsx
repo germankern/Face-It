@@ -7,15 +7,12 @@ import { useState } from "react";
 const Navbar = () => {
   const router = useRouter();
   const [toggle, setToggle] = useState("");
-  const home =
-    router.pathname === "/" || router.pathname === "/convenios"
-      ? "homeNavbarDekstop"
-      : " ";
+  const isHome = router.pathname === "/" || router.pathname === "/convenios";
   return (
     <>
       <div
         className={`${styles.containerDesktopNavbar} ${
-          home != " " ? styles[home] : " "
+          isHome ? styles.homeNavbarDekstop : " "
         }`}
       >
         <Brand />

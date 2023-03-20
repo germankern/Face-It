@@ -9,25 +9,24 @@ import Instagram2 from "../../assets/images/instagramWhite.svg";
 import { useRouter } from "next/router";
 const Networks = () => {
   const router = useRouter();
-  const eventos = router.pathname === "/eventos" ? true : false;
+  const eventos = router.pathname === "/eventos";
   return (
-    <>
+    <div className={styles.containerNetworks}>
+      <h4>Redes</h4>
       {eventos ? (
-        <div className={styles.containerNetworks}>
-          <h4>Redes</h4>
+        <>
           <Image src={Facebook2} alt="Facebook" />
           <Image src={Instagram2} alt="Instagram" />
           <Image src={Tiktok2} alt="Tiktok" />
-        </div>
+        </>
       ) : (
-        <div className={styles.containerNetworks}>
-          <h4>Redes</h4>
+        <>
           <Image src={Facebook} alt="Facebook" />
           <Image src={Instagram} alt="Instagram" />
           <Image src={Tiktok} alt="Tiktok" />
-        </div>
+        </>
       )}
-    </>
+    </div>
   );
 };
 

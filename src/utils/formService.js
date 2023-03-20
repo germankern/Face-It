@@ -1,4 +1,6 @@
-const formServicepostToGoogleScript = (formData, url) => {
+const formService = {};
+
+formService.postToGoogleScript = (formData, url) => {
   formData.Networks
     ? (formData.Networks = formData.Networks.map(
         (network) => `${network.name} (${network.network})`
@@ -19,4 +21,4 @@ const formServicepostToGoogleScript = (formData, url) => {
   });
 };
 
-export { formServicepostToGoogleScript };
+export { formService };

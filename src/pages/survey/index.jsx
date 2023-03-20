@@ -10,7 +10,7 @@ import UnderlineQuestions from "@/components/UnderlineQuestions";
 import useForm from "@/hooks/useForm";
 import SucessMessage from "../../components/SucessMessage";
 import { useState } from "react";
-import { formServicepostToGoogleScript } from "@/utils/formService.postToGoogleScript";
+import { formService } from "@/utils/formService";
 import {
   questions,
   buttonQuestions,
@@ -38,13 +38,15 @@ const Survey = () => {
     InteresEdadPersona: "",
     InteresNacionalidadPersona: "",
   };
-
+  const [activeModal, setActiveModal] = useState("");
+  const [loading, setLoading] = useState("");
+  const [error, setError] = useState("");
   const { formData, handleInputChange, handleSubmit, handleAddOption } =
     useForm(initialState, (data) => {
       setLoading(true);
       setError(null);
       try {
-        formServicepostToGoogleScript(data, URL_SURVEY_GOOGLE_SHEET);
+        formService.postToGoogleScript(data, URL_SURVEY_GOOGLE_SHEET);
       } catch (error) {
         setError(true);
       }
@@ -52,10 +54,6 @@ const Survey = () => {
         setLoading(false);
       }, 5000);
     });
-
-  const [activeModal, setActiveModal] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
 
   return (
     <>

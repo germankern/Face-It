@@ -19,11 +19,9 @@ const ButtonAddUser = ({
       user === "Facebook"
     ) {
       const objectUser = { network: "Facebook", name: username };
-      console.log("hola");
       users2.push(objectUser);
       setusersForm(users2);
     } else if (user === "") {
-      console.log("hola");
       const objectUser = { network: "Facebook", name: username };
       users2.push(objectUser);
       setusersForm(users2);

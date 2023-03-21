@@ -46,7 +46,6 @@ const ComentariosElement = () => {
       }, 5000);
     });
 
-  console.log(formData);
   return (
     <div className={styles.containerComentarios}>
       <form onSubmit={handleSubmit}>

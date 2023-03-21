@@ -5,14 +5,14 @@ const postToGoogleScript = (data, url) => {
       ).join(", "))
     : null;
 
-  const formData2 = new FormData();
+  const formData = new FormData();
   for (let key in data) {
-    formData2.append(key, data[key]);
+    formData.append(key, data[key]);
   }
 
   fetch(url, {
     method: "POST",
-    body: formData2,
+    body: formData,
   });
 };
 const formService = { postToGoogleScript };

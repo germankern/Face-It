@@ -19,13 +19,14 @@ import {
 } from "./strings";
 import styles from "./style.module.css";
 const URL_SURVEY_GOOGLE_SHEET =
-  "https://script.google.com/macros/s/AKfycbwhYFih1ebdS10_Po313bc7zVXCg6pH-V8SvVbUVs2JFL9AglVpXn34aQSymuy5Cw2U/exec";
+  "https://script.google.com/macros/s/AKfycbyMg1r3Y0wxtezGgWS03DhsFeCEMpRqnRKmcmgc2ve_WPJuRTty-7ZxFLIXJvnjpvBe/exec";
 
 const Survey = () => {
   const initialState = {
     Name: "",
     Genero: "Masculino",
     Edad: "",
+    Profesion: "",
     EstadoCivil: "Soltero",
     Nacionalidad: "",
     Ciudad: "",
@@ -81,6 +82,12 @@ const Survey = () => {
             data={formData.Edad}
             onChange={handleInputChange}
             name="Edad"
+          />
+          <UnderlineQuestions
+            question={questions[10].question}
+            data={formData.Profesion}
+            onChange={handleInputChange}
+            name="Profesion"
           />
           <SelectOptions
             placeHolder={questions[3].placeHolder} //4

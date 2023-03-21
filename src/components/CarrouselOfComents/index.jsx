@@ -27,9 +27,19 @@ const CarouselOfComents = () => {
   return (
     <>
       <div className={style.carrouselComments}>
-        <Image onClick={handleLeftArrowClick} src={ArrowLeft} />
-        <h3>{comments.slice(currentPosition, currentPosition + 1)}</h3>
-        <Image onClick={handleRightArrowClick} src={ArrowRigth} />
+        <Image
+          onClick={handleLeftArrowClick}
+          src={ArrowLeft}
+          alt={"flecha izquierda"}
+        />
+        <h3 key={comments.index}>
+          {comments.slice(currentPosition, currentPosition + 1)}
+        </h3>
+        <Image
+          onClick={handleRightArrowClick}
+          src={ArrowRigth}
+          alt={"flecha derecha"}
+        />
       </div>
     </>
   );

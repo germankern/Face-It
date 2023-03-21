@@ -32,7 +32,7 @@ const CarouselOfComents = () => {
           src={ArrowLeft}
           alt={"flecha izquierda"}
         />
-        <h3 key={comments.index}>
+        <h3 key={comments.currentPosition}>
           {comments.slice(currentPosition, currentPosition + 1)}
         </h3>
         <Image

@@ -2,8 +2,16 @@ import styles from "./style.module.css";
 import React, { useState, useEffect } from "react";
 import DropDownsOptions from "../DropDownsOptions";
 
-const SelectOptions = ({ placeHolder, title, options }) => {
+const SelectOptions = ({
+  placeHolder,
+  title,
+  options,
+  setuser,
+  name,
+  onChange,
+}) => {
   const [placeholder, setplaceHolder] = useState(" ");
+
   const [active, setactive] = useState("");
   useEffect(() => {
     setplaceHolder(placeHolder);
@@ -32,6 +40,9 @@ const SelectOptions = ({ placeHolder, title, options }) => {
                 key={key}
                 setplaceHolder={setplaceHolder}
                 item={item}
+                setuser={setuser}
+                name={name}
+                onChange={onChange}
               />
             ))}
           </ul>

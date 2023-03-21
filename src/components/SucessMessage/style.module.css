@@ -1,0 +1,81 @@
+.containerSucessMessage {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerSucessMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.containerSucessMessage p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+.containerSucessMessage h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.containerSucessMessage img {
+  width: 180px;
+  height: 90px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.containerSucessMessage button {
+  width: 120px;
+  font-size: 18px !important;
+}
+.popupContainerStyle {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .containerSucessMessage p {
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .containerSucessMessage h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .containerSucessMessage img {
+    width: 180px;
+    height: 90px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .containerSucessMessage button {
+    width: 120px;
+    font-size: 18px !important;
+  }
+}

@@ -1,6 +1,21 @@
 import styles from "./style.module.css";
 
-const UnderlineQuestions = ({ question, text, placeHolder }) => {
+const UnderlineQuestions = ({
+  question,
+  text,
+  placeHolder,
+  setUsername,
+  data,
+  onChange,
+  name,
+}) => {
+  function addUserNameNetworks(event) {
+    if (setUsername) {
+      setUsername(event.target.value);
+    } else {
+      onChange(event);
+    }
+  }
   return (
     <div className={styles.containerQuestions}>
       <label>{question}</label>
@@ -9,6 +24,9 @@ const UnderlineQuestions = ({ question, text, placeHolder }) => {
           <input
             className={styles.inputAnswers}
             placeholder={[placeHolder != "" ? placeHolder : ""]}
+            name={name}
+            value={data}
+            onChange={addUserNameNetworks}
           ></input>
           <p>{text}</p>
         </div>
@@ -16,6 +34,9 @@ const UnderlineQuestions = ({ question, text, placeHolder }) => {
         <input
           className={styles.inputAnswers}
           placeholder={[placeHolder != "" ? placeHolder : ""]}
+          name={name}
+          value={data}
+          onChange={addUserNameNetworks}
         ></input>
       )}
     </div>

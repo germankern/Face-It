@@ -16,7 +16,7 @@ const questions = [
   {
     question: "Mi estado civil es",
     placeHolder: "Soltero",
-    options: ["Soltero", "Casado"],
+    options: ["Soltero", "Casado", "Divorciado", "Viudo"],
   },
   {
     question: "Mi nacionalidad es",
@@ -42,6 +42,10 @@ const questions = [
   {
     question: "Mi telefono es",
     placeHolder: "+56 011 1111-1111",
+  },
+  {
+    question: "Me dedico a ",
+    placeHolder: "",
   },
 ];
 

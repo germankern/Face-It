@@ -5,6 +5,6 @@ const question = "Nombre Completo";
 const titleArea = "Reseña";
 const placeHolder = "Comparte tu opinion...";
 const nameButton = "Enviar";
-const type = "submitcomentario";
+const type = "submit";
 
 export { parrafo, title, question, titleArea, placeHolder, nameButton, type };

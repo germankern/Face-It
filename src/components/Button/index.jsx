@@ -1,5 +1,9 @@
 import styles from "./styles.module.css";
-const Button = ({ name, type, span }) => {
+
+const Button = ({ name, type, span, setActiveModal }) => {
+  const verficationSubmit = () => {
+    type === "submit" ? setActiveModal(true) : null;
+  };
   return (
     <div
       className={`${styles.containerButtom} ${
@@ -12,7 +16,7 @@ const Button = ({ name, type, span }) => {
           }
      `}
     >
-      <button type="button">
+      <button type={type} onClick={verficationSubmit}>
         <span>{span}</span>
         {name}
       </button>

@@ -14,7 +14,7 @@ const ConveniosSection = () => {
           negocio y seas parte de esta comunidad.
         </p>
         <div className={styles.conveniosSectionBtn}>
-          <Button name={"Contáctanos"}></Button>
+          <Button name={"Contáctanos"} type={"button"}></Button>
         </div>
       </div>
       <div className={styles.infoBgPink}>

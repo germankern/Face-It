@@ -65,14 +65,14 @@ const Survey = () => {
             question={questions[0].question} //1
             data={formData.Nombre}
             onChange={handleInputChange}
-            name={"Name"}
+            name="Name"
           ></UnderlineQuestions>
           <SelectOptions
             placeHolder={questions[1].placeHolder} //2
             title={questions[1].question}
             options={questions[1].options}
             data={formData.Genero}
-            name={"Genero"}
+            name="Genero"
             onChange={handleAddOption}
           ></SelectOptions>
           <UnderlineQuestions
@@ -80,7 +80,7 @@ const Survey = () => {
             text={questions[2].text}
             data={formData.Edad}
             onChange={handleInputChange}
-            name={"Edad"}
+            name="Edad"
           />
           <SelectOptions
             placeHolder={questions[3].placeHolder} //4
@@ -88,19 +88,19 @@ const Survey = () => {
             options={questions[3].options}
             data={formData.EstadoCivil}
             onChange={handleAddOption}
-            name={"EstadoCivil"}
+            name="EstadoCivil"
           />
           <UnderlineQuestions
             question={questions[4].question} //5
             data={formData.Nacionalidad}
             onChange={handleInputChange}
-            name={"Nacionalidad"}
+            name="Nacionalidad"
           />
           <UnderlineQuestions
             question={questions[5].question} //6
             data={formData.Ciudad}
             onChange={handleInputChange}
-            name={"Ciudad"}
+            name="Ciudad"
           />
           <AddUser
             placeHolder={questions[6].placeHolder} //7
@@ -109,55 +109,55 @@ const Survey = () => {
             question2={questions[7].question}
             networks={formData.Networks}
             onChange={handleAddOption}
-            name={"Networks"}
+            name="Networks"
           />
           <UnderlineQuestions
             question={questions[8].question}
             data={formData.Correo}
             onChange={handleInputChange} //8
-            name={"Correo"}
+            name="Correo"
           />
           <UnderlineQuestions
             question={questions[9].question} //9
             placeHolder={questions[9].placeHolder}
             data={formData.Telefono}
             onChange={handleInputChange}
-            name={"Telefono"}
+            name="Telefono"
           />
           <ButtonQuestions
             title={buttonQuestions[0].title} //10
             question={buttonQuestions[0].options}
             data={formData.OrientacionSexual}
             onChange={handleInputChange}
-            name={"OrientacionSexual"}
+            name="OrientacionSexual"
           />
           <ButtonQuestions
             title={buttonQuestions[1].title} //11
             question={buttonQuestions[1].options}
             data={formData.InteresServicio}
             onChange={handleInputChange}
-            name={"InteresServicio"}
+            name="InteresServicio"
           />
           <TextArea
             title={textAreaQuestion[0].title} //12
             placeHolder={textAreaQuestion[0].placeHolder}
             data={formData.InteresPersona}
             onChange={handleInputChange}
-            name={"InteresPersona"}
+            name="InteresPersona"
           />
           <ButtonQuestions
             title={buttonQuestions[2].title} //13
             question={buttonQuestions[2].options}
             data={formData.InteresEdadPersona}
             onChange={handleInputChange}
-            name={"InteresEdadPersona"}
+            name="InteresEdadPersona"
           />
           <ButtonQuestions
             title={buttonQuestions[3].title} //14
             question={buttonQuestions[3].options}
             data={formData.InteresNacionalidadPersona}
             onChange={handleInputChange}
-            name={"InteresNacionalidadPersona"}
+            name="InteresNacionalidadPersona"
           />
         </main>
         <Button name="Enviar" type="submit" setActiveModal={setActiveModal} />

@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 function Footer() {
   const router = useRouter();
-  const eventos = router.pathname === "/eventos" ? true : false;
+  const eventos = router.pathname === "/eventos";
   return (
     <>
       <div

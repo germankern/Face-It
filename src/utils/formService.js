@@ -1,18 +1,13 @@
-const formService = {};
-
-formService.postToGoogleScript = (formData, url) => {
-  formData.Networks
-    ? (formData.Networks = formData.Networks.map(
+const postToGoogleScript = (data, url) => {
+  data.Networks
+    ? (data.Networks = data.Networks.map(
         (network) => `${network.name} (${network.network})`
       ).join(", "))
     : null;
 
   const formData2 = new FormData();
-  for (let key in formData) {
-    formData2.append(key, formData[key]);
-  }
-  for (let entry of formData2.entries()) {
-    console.log(entry[0] + ": " + entry[1]);
+  for (let key in data) {
+    formData2.append(key, data[key]);
   }
 
   fetch(url, {
@@ -20,5 +15,6 @@ formService.postToGoogleScript = (formData, url) => {
     body: formData2,
   });
 };
+const formService = { postToGoogleScript };
 
 export { formService };

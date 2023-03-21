@@ -10,22 +10,15 @@ import { useRouter } from "next/router";
 const Networks = () => {
   const router = useRouter();
   const eventos = router.pathname === "/eventos";
+  const FacebookImageSrc = eventos ? Facebook2 : Facebook;
+  const InstagramImageSrc = eventos ? Instagram2 : Instagram;
+  const TiktokImageSrc = eventos ? Tiktok2 : Tiktok;
   return (
     <div className={styles.containerNetworks}>
       <h4>Redes</h4>
-      {eventos ? (
-        <>
-          <Image src={Facebook2} alt="Facebook" />
-          <Image src={Instagram2} alt="Instagram" />
-          <Image src={Tiktok2} alt="Tiktok" />
-        </>
-      ) : (
-        <>
-          <Image src={Facebook} alt="Facebook" />
-          <Image src={Instagram} alt="Instagram" />
-          <Image src={Tiktok} alt="Tiktok" />
-        </>
-      )}
+      <Image src={FacebookImageSrc} alt="Facebook" />
+      <Image src={InstagramImageSrc} alt="Instagram" />
+      <Image src={TiktokImageSrc} alt="Tiktok" />
     </div>
   );
 };

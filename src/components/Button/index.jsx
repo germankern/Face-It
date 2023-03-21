@@ -1,10 +1,6 @@
-import { useState } from "react";
-import ModalCompleted from "../ModalCompleted";
-import SucessMessage from "../SucessMessage";
 import styles from "./styles.module.css";
 
 const Button = ({ name, type, span, setActiveModal }) => {
-  const buttonType = type === "submit" ? "submit" : "button";
   const verficationSubmit = () => {
     type === "submit" ? setActiveModal(true) : null;
   };
@@ -20,7 +16,7 @@ const Button = ({ name, type, span, setActiveModal }) => {
           }
      `}
     >
-      <button type={buttonType} onClick={verficationSubmit}>
+      <button type={type} onClick={verficationSubmit}>
         <span>{span}</span>
         {name}
       </button>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./style.module.css";
 import Image from "next/image";
 import Image01 from "../../assets/images/01-image-gallery-eventos.jpg";
@@ -13,25 +13,21 @@ import ArrowLeft from "../../assets/images/ArrowLeft.svg";
 import ArrowRigth from "../../assets/images/ArrowRigth.svg";
 import { handleVideoEnd } from "../EventosMobile";
 
+const images = [
+  Image01,
+  Image02,
+  Image03,
+  Image04,
+  Image05,
+  Image06,
+  Image07,
+  Image08,
+];
 const GalleryModal = () => {
-  const images = [
-    Image01,
-    Image02,
-    Image03,
-    Image04,
-    Image05,
-    Image06,
-    Image07,
-    Image08,
-  ];
   const [modalOpen, setModalOpen] = useState(false);
-  // const [selectedImage, setSelectedImage] = useState(null);
+
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  // const handleImageClick = (image) => {
-  //   setSelectedImage(image);
-  //   setModalOpen(true);
-  // };
   const handlePrevImage = () => {
     setSelectedImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -43,6 +39,24 @@ const GalleryModal = () => {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.keyCode === 27) {
+        setModalOpen(false);
+      } else if (event.keyCode === 37) {
+        handlePrevImage();
+      } else if (event.keyCode === 39) {
+        handleNextImage();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [setModalOpen]);
 
   return (
     <>
@@ -60,8 +74,8 @@ const GalleryModal = () => {
                   <Image
                     src={images[selectedImageIndex]}
                     alt={"fotos de eventos realizados cartel"}
-                    onClick={() => setModalOpen(false)}
                   />
+                  <button onClick={() => setModalOpen(false)}>X</button>
                   <Image
                     src={ArrowRigth}
                     alt="siguiente a la derecha"

@@ -98,7 +98,7 @@
   }
   50% {
     transform: rotate(-60deg);
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     transform: translateY(0);
@@ -114,4 +114,23 @@
 .modal img:first-child,
 .modal img:last-child {
   max-width: 34px;
+}
+.modal button {
+  position: fixed;
+  top: 8vh;
+  right: 18vh;
+  padding: 6px 8px;
+  color: black;
+  background-color: #979797c6;
+  box-shadow: 0px 3px 4px 0px white;
+  border-radius: 20%;
+  font-size: 16px;
+  font-weight: 800;
+  z-index: 901;
+}
+@media screen and (min-width: 1000px) {
+  .modal button {
+    top: 4vh;
+    right: 30vh;
+  }
 }

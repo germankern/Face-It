@@ -16,13 +16,13 @@ const Networks = () => {
   const TiktokImageSrc = eventos ? Tiktok2 : Tiktok;
 
   const handleFacebookClick = () => {
-    window.open("https://www.facebook.com/", "_blank");
+    window.open("https://www.facebook.com/FaceItCitasRapidas", "_blank");
   };
   const handleInstagramClick = () => {
     window.open("https://www.instagram.com/faceitcitasrapidas/", "_blank");
   };
   const handleTiktokClick = () => {
-    window.open("https://www.tiktok.com/", "_blank");
+    window.open("https://www.tiktok.com/@faceitcitasrapidas", "_blank");
   };
 
   return (

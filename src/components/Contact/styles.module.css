@@ -34,13 +34,14 @@
 
 @media (min-width: 768px) {
   .contactContainer {
-    width: 180px;
-    margin: 10px;
+    max-width: 30%;
+    margin: 10px 0px 0px 85px;
     flex: 1;
     margin-left: 85px;
   }
   .title {
     font-size: 18px;
+    margin-bottom: 28px;
   }
   .correo,
   .whatssap {

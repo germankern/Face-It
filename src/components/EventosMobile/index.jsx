@@ -8,7 +8,7 @@ import Tragos from "../../assets/images/eventos-05-tragos.jpg";
 import { useEffect, useState } from "react";
 import { strings } from "./strings";
 
-const handleVideoEnd = (event) => {
+export const handleVideoEnd = (event) => {
   event.target.currentTime = 0;
   event.target.play();
 };

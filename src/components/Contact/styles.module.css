@@ -1,27 +1,33 @@
 .contactContainer {
   display: grid;
-  width: 85%;
+  width: 80%;
   height: 120px;
   margin: 0 auto;
-  grid-template-columns: 40px 1fr 1fr;
+  grid-template-columns: 30px 1fr 1fr;
   grid-template-rows: minmax(50px, auto);
 }
 
 .title {
   grid-column: 1/4;
-  align-self: end;
-  margin-bottom: 10px;
+  align-self: center;
+  font-weight: 500;
 }
 .correo,
-.whatsapp {
+.whatssap {
   grid-column: 2/4;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.correo:hover,
+.whatssap:hover {
+  text-decoration: underline 2px #e05aa0;
 }
 
 @media (min-width: 510px) {
   .contactContainer {
-    width: 460px;
+    width: 440px;
   }
-  .contactContainer p {
+  .title {
     font-size: 20px;
   }
 }
@@ -29,16 +35,22 @@
 @media (min-width: 768px) {
   .contactContainer {
     width: 180px;
-    margin: 0;
+    margin: 10px;
     flex: 1;
-    margin-left: 100px;
+    margin-left: 85px;
   }
   .title {
-    font-size: 12px !important;
+    font-size: 18px;
+  }
+  .correo,
+  .whatssap {
+    font-size: 13px;
     font-weight: 500;
   }
-  .contactContainer p {
-    font-size: 10px;
-    font-weight: 500;
+}
+@media (min-width: 1100px) {
+  .correo,
+  .whatssap {
+    margin-left: 4px;
   }
 }

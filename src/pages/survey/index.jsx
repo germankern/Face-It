@@ -19,7 +19,7 @@ import {
 } from "./strings";
 import styles from "./style.module.css";
 const URL_SURVEY_GOOGLE_SHEET =
-  "https://script.google.com/macros/s/AKfycbyMg1r3Y0wxtezGgWS03DhsFeCEMpRqnRKmcmgc2ve_WPJuRTty-7ZxFLIXJvnjpvBe/exec";
+  "https://script.google.com/macros/s/AKfycbzIVPL36gKHIwUZJEdzYt3JL82-Hw2PSzb6giDsbFr1OqPwPAlPwkVOSEB3VKlOwLDB/exec";
 
 const Survey = () => {
   const initialState = {

@@ -23,7 +23,7 @@ const questions = [
     placeHolder: "",
   },
   {
-    question: "Acutalmente vivo en la ciduad de",
+    question: "Acutalmente vivo en la ciudad de",
     placeHolder: "",
   },
   {

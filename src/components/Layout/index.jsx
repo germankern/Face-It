@@ -6,9 +6,11 @@ import Footer from "../Footer";
 function Layout({ children }) {
   return (
     <>
-      <Navbar />
-      <div className={styles.maxWidth}>{children}</div>
-      <Footer />
+      <div className={styles.maxWidth}>
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }

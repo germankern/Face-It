@@ -5,7 +5,7 @@ import style from "./style.module.css";
 import React, { useState } from "react";
 import { comments } from "./strings.js";
 
-const CarouselOfComents = () => {
+const CarouselOfComments = () => {
   const [currentPosition, setCurrentPosition] = useState(0);
 
   const handleLeftArrowClick = () => {
@@ -32,9 +32,11 @@ const CarouselOfComents = () => {
           src={ArrowLeft}
           alt={"flecha izquierda"}
         />
-        <h3 key={comments.currentPosition}>
-          {comments.slice(currentPosition, currentPosition + 1)}
-        </h3>
+        {comments
+          .slice(currentPosition, currentPosition + 1)
+          .map((comment, index) => (
+            <h3 key={index}> {comment}</h3>
+          ))}
         <Image
           onClick={handleRightArrowClick}
           src={ArrowRigth}
@@ -45,4 +47,4 @@ const CarouselOfComents = () => {
   );
 };
 
-export default CarouselOfComents;
+export default CarouselOfComments;

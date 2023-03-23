@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import Image from "next/image";
 import ArrowHeader from "../../assets/images/ArrowHeader.svg";
 import Velas from "../../assets/images/eventos-01-velas-desktop.jpg";
-import CarouselOfComents from "../CarrouselOfComents";
+import CarouselOfComments from "../CarrouselOfComents";
 import GalleryModal from "../GalleryModal";
 import { handleVideoEnd } from "../EventosMobile";
 
@@ -28,7 +28,7 @@ const EventosDesktop = () => {
           </video>
         </div>
       </section>
-      <CarouselOfComents />
+      <CarouselOfComments />
       <GalleryModal />
     </>
   );

@@ -17,7 +17,7 @@ const MainSection = (props) => {
           </h1>
           <p>Eventos de citas rápidas para solteros.</p>
           <p>Confiable, seguro y divertido</p>
-          <Button name={"! Quiero participar !"} />
+          <Button name={"¡Quiero participar!"} />
         </div>
       ) : (
         <div

@@ -70,9 +70,11 @@
   }
   .showDescription p {
     color: black;
-    padding: 5px;
+    padding: 5px 15px;
     position: absolute;
     font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 5%;
   }
   .showDescription {
     z-index: 100;

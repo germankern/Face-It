@@ -25,7 +25,6 @@ const SucessMessage = ({ loading }) => {
             </p>
             <p>de la próxima convocatoria por mail.</p>
             <Image src={imageSuccess} alt="imageSucess"></Image>
-
             <Button name={"Volver"} type={"button"}></Button>
           </div>
         )}

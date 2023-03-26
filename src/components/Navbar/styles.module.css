@@ -26,6 +26,7 @@
     height: 93px;
     z-index: 100;
     width: 100%;
+    max-width: 1440px;
   }
   .homeNavbarDekstop {
     width: 100%;

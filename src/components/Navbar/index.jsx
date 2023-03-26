@@ -9,7 +9,10 @@ import Link from "next/link";
 const Navbar = () => {
   const router = useRouter();
   const [toggle, setToggle] = useState("");
-  const isHome = router.pathname === "/" || router.pathname === "/convenios";
+  const isHome =
+    router.pathname === "/" ||
+    router.pathname === "/convenios" ||
+    router.pathname === "/eventos";
   return (
     <>
       <div

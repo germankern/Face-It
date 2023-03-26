@@ -15,12 +15,17 @@
 }
 @media (min-width: 768px) {
   .mainContainer {
-    margin-left: 50px;
+    padding: 20px 25px;
+  }
+  .formButton button:hover {
+    transition: 500ms;
+    letter-spacing: 8%;
+    box-shadow: 0px 3px 2px 1px rgba(255, 206, 0, 0.8);
   }
 }
 @media (min-width: 992px) {
   .mainContainer {
-    margin-left: 100px;
+    margin-left: 6.5%;
     max-width: 990px;
   }
 }

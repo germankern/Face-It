@@ -13,7 +13,7 @@ const Brand = (props) => {
         `}
     >
       <Link href={"/"}>
-        <Image style={{ marginRight: "6px" }} src={IconLogo} alt="IconLogo" />
+        <Image src={IconLogo} alt="IconLogo" />
         <Image src={Logo} alt="Logo" />
       </Link>
     </div>

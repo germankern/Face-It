@@ -7,7 +7,7 @@ const ContainerYellowFAQ = () => {
       <h4>¿No encontraste lo que estabas buscando?</h4>
       <p>
         Envía tu consulta a{" "}
-        <a href="https://twitter.com" target={"_blank"}>
+        <a href="mailto:info@faceitcitasrapidas" target={"_blank"}>
           info@faceitcitasrápidas.com
         </a>{" "}
         para que podamos responder tus dudas.

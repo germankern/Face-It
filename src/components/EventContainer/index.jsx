@@ -5,6 +5,7 @@ import meet from "../../assets/images/meet-image.png";
 import cofradia from "../../assets/images/cofradia-image.jpg";
 import lagerhouse from "../../assets/images/lagerhouse-image.jpg";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const events = [
   {
@@ -36,9 +37,11 @@ const EventContainer = () => {
           alt="couple meeting"
           className={styles.coupleStyle2}
         />
-        <h2 className={styles.titleStyle}>
-          Conoce Nuestros Eventos e inscríbite
-        </h2>
+        <Link href={"/eventos"}>
+          <h2 className={styles.titleStyle}>
+            Conoce Nuestros Eventos e inscríbite
+          </h2>
+        </Link>
       </div>
       <div className={styles.eventListContainer}>
         {events.map((item, index) => (

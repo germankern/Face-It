@@ -4,6 +4,7 @@ import Eventos from "../../assets/images/Eventos.svg";
 import Incripciones from "../../assets/images/Incripciones.svg";
 import Recomendaciones from "../../assets/images/Recomendaciones.svg";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const parrafo = [
   {
@@ -33,48 +34,54 @@ const ButtonLinksContainer = () => {
   const width = 1024; // Usar css
   return (
     <div className={styles.linkContainer}>
-      <div className={styles.linkItems}>
-        <Image className={styles.imgItems} src={Eventos} alt="" />
-        <a className={styles.linkEvents} href="https://www.google.com/?hl=es">
-          Eventos
-        </a>
-        {width > 768 ? (
-          <Parrafo
-            parrafo1={parrafo[0].parrafo1}
-            parrafo2={parrafo[0].parrafo2}
-          />
-        ) : (
-          ""
-        )}
-      </div>
-      <div className={styles.linkItems}>
-        <Image className={styles.imgItems} src={Incripciones} alt="" />
-        <a className={styles.linkEvents} href="https://www.google.com/?hl=es">
-          Inscripciones
-        </a>
-        {width > 768 ? (
-          <Parrafo
-            parrafo1={parrafo[1].parrafo1}
-            parrafo2={parrafo[1].parrafo2}
-          />
-        ) : (
-          ""
-        )}
-      </div>
-      <div className={styles.linkItems}>
-        <Image className={styles.imgItems} src={Recomendaciones} alt="" />
-        <a className={styles.linkEvents} href="https://www.google.com/?hl=es">
-          Recomendaciones
-        </a>
-        {width > 768 ? (
-          <Parrafo
-            parrafo1={parrafo[2].parrafo1}
-            parrafo2={parrafo[2].parrafo2}
-          />
-        ) : (
-          ""
-        )}
-      </div>
+      <Link href="/eventosFAQ">
+        <div className={styles.linkItems}>
+          <Image className={styles.imgItems} src={Eventos} alt="" />
+          <p id={styles.linkEvents} className={styles.linkEvents}>
+            Eventos
+          </p>
+          {width > 768 ? (
+            <Parrafo
+              parrafo1={parrafo[0].parrafo1}
+              parrafo2={parrafo[0].parrafo2}
+            />
+          ) : (
+            ""
+          )}
+        </div>
+      </Link>
+      <Link href="/inscripcionesFAQ">
+        <div className={styles.linkItems}>
+          <Image className={styles.imgItems} src={Incripciones} alt="" />
+          <p id={styles.linkEvents} className={styles.linkEvents}>
+            Inscripciones
+          </p>
+          {width > 768 ? (
+            <Parrafo
+              parrafo1={parrafo[1].parrafo1}
+              parrafo2={parrafo[1].parrafo2}
+            />
+          ) : (
+            ""
+          )}
+        </div>
+      </Link>
+      <Link href="recomendacionesFAQ">
+        <div className={styles.linkItems}>
+          <Image className={styles.imgItems} src={Recomendaciones} alt="" />
+          <p id={styles.linkEvents} className={styles.linkEvents}>
+            Recomendaciones
+          </p>
+          {width > 768 ? (
+            <Parrafo
+              parrafo1={parrafo[2].parrafo1}
+              parrafo2={parrafo[2].parrafo2}
+            />
+          ) : (
+            ""
+          )}
+        </div>
+      </Link>
     </div>
   );
 };

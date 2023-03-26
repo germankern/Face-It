@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import menulist from "../../assets/images/MenuListNavbar.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContainerMenuList = ({ toggle, setToggle }) => {
   return (
@@ -17,15 +18,31 @@ const ContainerMenuList = ({ toggle, setToggle }) => {
         />
       </a>
       <ul className={styles.menuListItems}>
-        <li>Registrarme</li>
-        <li>Conócenos</li>
-        <li>Convenios</li>
-        <li>Eventos</li>
-        <h3>Preguntas frecuentes</h3>
+        <Link href="/survey">
+          <li>Registrarme</li>
+        </Link>
+        <Link href="/sobrenosotras">
+          <li>Conócenos</li>
+        </Link>
+        <Link href="/convenios">
+          <li>Convenios</li>
+        </Link>
+        <Link href="/eventos">
+          <li>Eventos</li>
+        </Link>
+        <Link href="/faq">
+          <h3>Preguntas frecuentes</h3>
+        </Link>
         <li>Legales</li>
-        <li>Terminos y Condiciones</li>
-        <h3>Políticas de privacidad</h3>
-        <li>Dejanos tu comentario</li>
+        <Link href="/terms">
+          <li>Terminos y Condiciones</li>
+        </Link>
+        <Link href="/politicas">
+          <h3>Políticas de privacidad</h3>
+        </Link>
+        <Link href="/comentarios">
+          <li>Dejanos tu comentario</li>
+        </Link>
       </ul>
     </div>
   );

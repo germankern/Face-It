@@ -16,9 +16,21 @@ const Contact = () => {
       <div className={styles.contactContainer}>
         <p className={styles.title}>Contacto</p>
         <Image src={CorreroImageSrc} alt="Correo" />
-        <p className={styles.correo}>info@faceitcitasrapidas</p>
+        <a
+          className={styles.correo}
+          href="mailto:info@faceitcitasrapidas"
+          target={"_blank"}
+        >
+          info@faceitcitasrapidas
+        </a>
         <Image src={WhatssapImageSrc} alt="Whatssap" />
-        <p className={styles.whatssap}>011 11 1111-1111</p>
+        <a
+          className={styles.whatssap}
+          href="https://wa.me/+56930879581"
+          target={"_blank"}
+        >
+          +56 30879581
+        </a>
       </div>
     </>
   );

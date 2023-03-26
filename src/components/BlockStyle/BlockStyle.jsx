@@ -10,7 +10,9 @@ const BlockStyle = ({ parrafo, email, bold }) => {
         ) : (
           <>
             <p>{parrafo}</p>
-            <b>{email}</b>
+            <a href="mailto:info@faceitcitasrapidas" target={"_blank"}>
+              <b>{email}</b>
+            </a>
           </>
         )}
       </div>

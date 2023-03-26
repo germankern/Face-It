@@ -26,6 +26,7 @@
     height: 93px;
     z-index: 100;
     width: 100%;
+    max-width: 1440px;
   }
   .homeNavbarDekstop {
     width: 100%;
@@ -52,6 +53,7 @@
     color: white;
     padding: 10px;
     border-radius: 85px;
+    cursor: pointer;
   }
 }
 @media (min-width: 992px) {

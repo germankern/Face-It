@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import ContainerYellowFAQ from "../ContainerYellowFAQ";
+import Link from "next/link";
 
 const InscripcionesFAQ = () => {
   return (
@@ -25,7 +26,7 @@ const InscripcionesFAQ = () => {
         <h3>Cómo reservar y cuándo pagar</h3>
         <p>
           <b>Para registrarte en lista de espera debes completar</b>{" "}
-          <a href="#">el formulario de inscripción</a>
+          <Link href="/survey">el formulario de inscripción </Link>
           de la pantalla principal.
           <br />
           Si tu perfil es acorde al próximo evento, te enviaremos un mail con la
@@ -40,7 +41,11 @@ const InscripcionesFAQ = () => {
         <p>
           <b>
             Puedes cancelar tu inscripción hasta una semana anterior al evento,
-            enviando <a href="#">un mail</a> con la solicitud.
+            enviando{" "}
+            <a href="mailto:info@faceitcitasrapidas" target={"_blank"}>
+              un mail
+            </a>{" "}
+            con la solicitud.
           </b>{" "}
           Se reembolsará el total del valor de la entrada. Pedimos se nos avise
           lo antes posible para poder invitar a otras personas y mantener la

@@ -167,7 +167,9 @@ const Survey = () => {
             name="InteresNacionalidadPersona"
           />
         </main>
-        <Button name="Enviar" type="submit" setActiveModal={setActiveModal} />
+        <div className={styles.formButton}>
+          <Button name="Enviar" type="submit" setActiveModal={setActiveModal} />
+        </div>
         {activeModal ? (
           <ModalCompleted>
             <SucessMessage loading={loading} />

@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerYellowFAQ from "../ContainerYellowFAQ";
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const EventosFAQ = () => {
   return (
@@ -48,9 +49,11 @@ const EventosFAQ = () => {
           seguridad de los participantes, ya que todos se encuentran por primera
           vez en el evento.
         </p>
-        <div className={styles.linksEvent}>
-          <a>Mostrar encuentros anteriores</a>
-        </div>
+        <Link href="/eventos">
+          <div className={styles.linksEvent}>
+            <a>Mostrar encuentros anteriores</a>
+          </div>
+        </Link>
         <h3>Cómo contactar nuevamente a un participante</h3>
         <p>
           Al finalizar el evento puedes informar al organizador con qué

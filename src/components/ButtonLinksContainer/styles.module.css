@@ -39,6 +39,7 @@
   .imgItems {
     width: 80px;
     height: 80px;
+    padding: 3px;
   }
 }
 
@@ -49,10 +50,27 @@
     font-size: 12px;
     margin-top: 7px;
   }
+  #linkEvents {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 132%;
+  }
+  .linkItems:hover {
+    transition: 500ms;
+    box-shadow: 0px 1px 3px;
+    border-radius: 5%;
+  }
 }
 
 @media (min-width: 768px) {
   .containerMainParagraph {
     display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .imgItems {
+    width: 170px;
+    height: 90px;
   }
 }

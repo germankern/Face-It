@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 700px;
 }
 .planes h3 {
   font-size: 16px;
@@ -63,7 +64,18 @@
 .contactoMail a {
   font-weight: 700;
 }
-
+@media screen and (min-width: 700px) {
+  .desktopPlanes {
+    margin-left: 10%;
+    margin-right: 12%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .desktopPlanes {
+    margin-left: 18%;
+    margin-right: 20%;
+  }
+}
 @media screen and (min-width: 1250px) {
   .planesContainer {
     padding: 0px;

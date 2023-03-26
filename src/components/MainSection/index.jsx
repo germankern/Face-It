@@ -16,8 +16,8 @@ const MainSection = (props) => {
             Encuentros reales,<br></br>cara a cara y sin filtros.
           </h1>
           <p>Eventos de citas rápidas para solteros.</p>
-          <p>Confiable,seguro y divertido</p>
-          <Button name={"Quiero Participar!"}></Button>
+          <p>Confiable, seguro y divertido</p>
+          <Button name={"! Quiero participar !"} />
         </div>
       ) : (
         <div

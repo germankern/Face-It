@@ -8,6 +8,7 @@
   background-size: 100% 100%;
   background-position: center;
   position: relative;
+  aspect-ratio: 1.6;
 }
 .conveniosSection::after {
   content: "";
@@ -36,6 +37,7 @@
   line-height: 150%;
   color: rgb(255, 255, 255);
   z-index: 10;
+  max-width: 550px;
 }
 .conveniosSectionBtn {
   z-index: 10;
@@ -71,15 +73,18 @@
 }
 @media (min-width: 768px) {
   .conveniosSection {
-    height: 486px;
+    height: 496px;
+  }
+  .conveniosSection h2 {
+    margin-top: 20%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 900px) {
   .conveniosSection {
     background-image: url("../../assets/images/convenios-section-desktop.png");
     background-position: center center;
     background-size: cover;
-    height: 668px;
+    height: 650px;
   }
   .conveniosSection h2 {
     font-size: 44px;

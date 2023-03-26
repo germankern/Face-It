@@ -5,7 +5,7 @@ export const strings = [
     <br /> agradable.”
   </>,
   <>
-    “Tenia mucho miedo de
+    “Tenía mucho miedo de
     <br /> participar, <br />
     pero la dinámica es muy
     <br /> motivadora y divertida

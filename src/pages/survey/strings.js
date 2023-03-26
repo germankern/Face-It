@@ -51,7 +51,7 @@ const questions = [
 
 const buttonQuestions = [
   {
-    title: "¿Cúal es tu orientación sexual",
+    title: "¿Cúal es tu orientación sexual?",
     options: {
       0: "Heterosexual",
       1: "Homosexual",
@@ -60,7 +60,7 @@ const buttonQuestions = [
     },
   },
   {
-    title: "¿Qué te trae por aqui",
+    title: "¿Qué te trae por aquí?",
     options: {
       0: "Busco algo serio",
       1: "Quiero nuevas amistades",
@@ -75,7 +75,7 @@ const buttonQuestions = [
       1: "26 a 35 años",
       2: "36 a 45 años",
       3: "46 a 55 años",
-      4: "Más de años",
+      4: "Más de 56 años",
       5: "La edad no es lo más impórtante",
     },
   },

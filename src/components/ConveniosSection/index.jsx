@@ -7,7 +7,7 @@ const ConveniosSection = () => {
     <>
       <div className={styles.conveniosSection}>
         <h2>
-          Quieres llevar Face It<br></br>a tu ciudad?
+          ¿Quieres llevar Face It<br></br>a tu ciudad?
         </h2>
         <p>
           Te brindamos la asesoría a tu medida para que inicies tu propio

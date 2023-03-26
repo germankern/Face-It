@@ -23,7 +23,7 @@ const Navbar = () => {
         <Brand />
         <div className={styles.navbarLinks}>
           <Link href={"/sobrenosotras"}>
-            <p>Conocenos</p>
+            <p>Conócenos</p>
           </Link>
           <Link href={"/convenios"}>
             <p>Convenios</p>

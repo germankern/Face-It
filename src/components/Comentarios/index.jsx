@@ -20,7 +20,7 @@ import Stars from "../Stars";
 import { useState } from "react";
 import SucessMessageComentarios from "../SucessMessageComentarios";
 const URL_COMENTARIOS_GOOGLE_SHEET =
-  "https://script.google.com/macros/s/AKfycbwP_iH1R69IuAzfYe55odUe_r1_bxrPFvEiyBWgd13EAuLvDpBEVaqD4qGhsakpRC5Q/exec";
+  "https://script.google.com/macros/s/AKfycbzIVPL36gKHIwUZJEdzYt3JL82-Hw2PSzb6giDsbFr1OqPwPAlPwkVOSEB3VKlOwLDB/exec";
 const ComentariosElement = () => {
   const [score, setScore] = useState(0);
   const [activeModal, setActiveModal] = useState("");
@@ -45,7 +45,7 @@ const ComentariosElement = () => {
         setLoading(false);
       }, 5000);
     });
-
+  console.log(formData);
   return (
     <div className={styles.containerComentarios}>
       <form onSubmit={handleSubmit}>

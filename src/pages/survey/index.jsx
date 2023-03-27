@@ -16,7 +16,7 @@ import {
   buttonQuestions,
   textAreaQuestion,
   infoBlockStyle,
-} from "./strings";
+} from "../../strings/survey";
 import styles from "./style.module.css";
 const URL_SURVEY_GOOGLE_SHEET =
   "https://script.google.com/macros/s/AKfycbzIVPL36gKHIwUZJEdzYt3JL82-Hw2PSzb6giDsbFr1OqPwPAlPwkVOSEB3VKlOwLDB/exec";

@@ -1,7 +1,7 @@
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
 import TextSection from "@/components/TextSection/index";
 import styles from "./style.module.css";
-import { alltext } from "./string";
+import { alltext } from "../../strings/terms";
 
 const Survey = () => {
   return (

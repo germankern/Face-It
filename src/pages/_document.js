@@ -9,7 +9,6 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="icon" type="image/x-icon" href="/IconLogo.svg"></link>
-        <title>Face It | Citas Rápidas</title>
       </Head>
       <body>
         <Main />

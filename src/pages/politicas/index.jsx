@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import BlockStyle from "@/components/BlockStyle/BlockStyle";
 import TextSection from "@/components/TextSection/index";
-import { alltext } from "./string";
+import { alltext } from "../../strings/politicas";
 
 const PolitcasPrivacidad = () => {
   return (

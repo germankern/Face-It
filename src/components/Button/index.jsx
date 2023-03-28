@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
 
-const Button = ({ name, type, span, setActiveModal }) => {
+const Button = ({ name, type, span, setActiveModal, link }) => {
   const verficationSubmit = () => {
     type === "submit" ? setActiveModal(true) : null;
   };
@@ -17,12 +17,19 @@ const Button = ({ name, type, span, setActiveModal }) => {
           }
      `}
     >
-      <Link href={"/survey"}>
+      {link ? (
+        <Link href="/survey">
+          <button type={type} onClick={verficationSubmit}>
+            <span>{span}</span>
+            {name}
+          </button>
+        </Link>
+      ) : (
         <button type={type} onClick={verficationSubmit}>
           <span>{span}</span>
           {name}
         </button>
-      </Link>
+      )}
     </div>
   );
 };

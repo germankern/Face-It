@@ -46,6 +46,7 @@ const Survey = () => {
     useForm(initialState, (data) => {
       setLoading(true);
       setError(null);
+
       try {
         formService.postToGoogleScript(data, URL_SURVEY_GOOGLE_SHEET);
       } catch (error) {
@@ -56,6 +57,7 @@ const Survey = () => {
       }, 5000);
     });
 
+  console.log(loading);
   return (
     <>
       <MainSection name="survey" />
@@ -167,9 +169,9 @@ const Survey = () => {
             name="InteresNacionalidadPersona"
           />
         </main>
-        <div className={styles.formButton}>
-          <Button name="Enviar" type="submit" setActiveModal={setActiveModal} />
-        </div>
+
+        <Button name="Enviar" type="submit" setActiveModal={setActiveModal} />
+
         {activeModal ? (
           <ModalCompleted>
             <SucessMessage loading={loading} />

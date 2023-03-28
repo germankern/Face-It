@@ -47,6 +47,7 @@
   margin: 19px 0px;
   letter-spacing: 0.1px;
   text-align: center;
+  cursor: pointer;
 }
 .infoBgPink {
   background-color: #e05aa0;

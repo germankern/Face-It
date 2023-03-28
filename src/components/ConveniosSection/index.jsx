@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Button from "../Button";
 import styles from "./styles.module.css";
@@ -14,7 +15,7 @@ const ConveniosSection = () => {
           negocio y seas parte de esta comunidad.
         </p>
         <div className={styles.conveniosSectionBtn}>
-          <Button name={"Contáctanos"} type={"button"}></Button>
+          <Button name={"Contáctanos"} type={"button"} link={"survey"}></Button>
         </div>
       </div>
       <div className={styles.infoBgPink}>

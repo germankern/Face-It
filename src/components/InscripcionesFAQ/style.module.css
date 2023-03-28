@@ -1,26 +1,62 @@
 .inscripcionesContainer {
-  padding: 48px 36px;
+  padding: 35px 25px;
 }
 .inscripcionesContainer h2 {
-  font-size: 44px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 125%;
   margin-bottom: 20px;
 }
 .inscripcionesContainer h3 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 132%;
   margin: 32px 0px 16px 0px;
 }
 .inscripcionesContainer p {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 158%;
+  line-height: 180%;
   padding: 2px;
 }
 .inscripcionesContainer a {
   color: #e05aa0;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 600;
   text-decoration: underline;
+}
+@media screen and (min-width: 767px) {
+  .inscripcionesContainer {
+    padding: 48px;
+  }
+  .inscripcionesContainer h2 {
+    font-size: 36px;
+  }
+  .inscripcionesContainer h3 {
+    font-size: 20px;
+  }
+  .inscripcionesContainer p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 180%;
+    padding: 2px;
+  }
+  .inscripcionesContainer a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .inscripcionesContainer h2 {
+    font-size: 44px;
+  }
+  .inscripcionesContainer h3 {
+    font-size: 24px;
+  }
+  .inscripcionesContainer p {
+    font-size: 20px;
+    line-height: 225%;
+  }
+  .inscripcionesContainer a {
+    font-size: 20px;
+  }
 }

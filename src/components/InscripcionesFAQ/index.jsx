@@ -8,7 +8,7 @@ const InscripcionesFAQ = () => {
     <>
       <div className={styles.inscripcionesContainer}>
         <h2>Inscripciones</h2>
-        <h3>Qué incluye la entrada</h3>
+        <h3>¿ Qué incluye la entrada ?</h3>
         <p>
           <b>La entrada incluye el ingreso al evento</b> y la organización del
           mismo, <b>junto con 1 consumición en el bar</b> que puede ser jugo,
@@ -23,7 +23,7 @@ const InscripcionesFAQ = () => {
           y se puede reservar hasta una semana anterior al evento, pagando el
           total.
         </p>
-        <h3>Cómo reservar y cuándo pagar</h3>
+        <h3>¿ Cómo reservar y cuándo pagar ?</h3>
         <p>
           <b>Para registrarte en lista de espera debes completar</b>{" "}
           <Link href="/survey">el formulario de inscripción </Link>

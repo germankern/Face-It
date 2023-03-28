@@ -22,12 +22,13 @@
   .bodyFooter {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 12px;
   }
 }
 
 @media (min-width: 992px) {
   .bodyFooter {
     width: 85%;
-    margin: 0 auto;
   }
 }

@@ -2,7 +2,7 @@
   color: #010101;
   background: #ffce00;
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
   line-height: 150%;
   padding: 12px;
 }
@@ -12,4 +12,9 @@
 .containerYellowD a {
   font-weight: 700;
   text-decoration: underline;
+}
+@media screen and (min-width: 1000px) {
+  .containerYellowD {
+    font-size: 25px;
+  }
 }

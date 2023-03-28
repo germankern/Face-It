@@ -73,6 +73,7 @@
     margin-bottom: 15px;
   }
   .buttonSurvey button {
+    width: 140px;
     font-size: 20px;
   }
 }

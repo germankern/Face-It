@@ -57,7 +57,6 @@ const Survey = () => {
       }, 5000);
     });
 
-  console.log(loading);
   return (
     <>
       <MainSection name="survey" />

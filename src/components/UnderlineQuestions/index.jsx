@@ -27,6 +27,7 @@ const UnderlineQuestions = ({
             name={name}
             value={data}
             onChange={addUserNameNetworks}
+            required
           ></input>
           <p>{text}</p>
         </div>
@@ -37,6 +38,7 @@ const UnderlineQuestions = ({
           name={name}
           value={data}
           onChange={addUserNameNetworks}
+          required
         ></input>
       )}
     </div>

@@ -7,7 +7,7 @@ const RecomendacionesFAQ = () => {
     <>
       <div className={styles.recomendacionesContainer}>
         <h2>Recomendaciones</h2>
-        <h3>Cómo prepararse para la cita</h3>
+        <h3>¿ Cómo prepararse para la cita ?</h3>
         <p>
           La puntualidad es importante.
           <br />

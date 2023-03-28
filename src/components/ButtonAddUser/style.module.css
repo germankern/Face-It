@@ -34,8 +34,8 @@
   margin-bottom: 50px;
   width: 150px;
   margin-left: 10px;
-  font-size: 25px;
-  padding: 0;
+  font-size: 16px;
+  padding: 4px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .buttonSurvey span {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .buttonSubmit {
@@ -71,5 +71,8 @@
   /* BackgroundMain */
   .buttonSurvey {
     margin-bottom: 15px;
+  }
+  .buttonSurvey button {
+    font-size: 20px;
   }
 }

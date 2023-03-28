@@ -1,27 +1,61 @@
 .eventosContainer {
-  padding: 48px;
+  padding: 35px 25px;
 }
 .eventosContainer h2 {
-  font-size: 44px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 125%;
   margin-bottom: 20px;
 }
 .eventosContainer h3 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 132%;
   margin: 32px 0px;
 }
 .eventosContainer p {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 158%;
+  line-height: 180%;
 }
 .linksEvent {
   color: #e05aa0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
   margin: 32px 0px;
+}
+@media screen and (min-width: 767px) {
+  .eventosContainer {
+    padding: 48px;
+  }
+  .eventosContainer h2 {
+    font-size: 36px;
+  }
+  .eventosContainer h3 {
+    font-size: 20px;
+  }
+  .eventosContainer p {
+    font-size: 16px;
+  }
+  .linksEvent {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .eventosContainer h2 {
+    font-size: 44px;
+  }
+  .eventosContainer h3 {
+    font-size: 24px;
+  }
+  .eventosContainer p {
+    font-size: 20px;
+    line-height: 225%;
+  }
+  .linksEvent {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }

@@ -40,7 +40,7 @@ const PolitcasPrivacidad = () => {
       </div>
       <BlockStyle
         parrafo="Si quieres saber más, contactanos: "
-        email="info@faceitcitasrápidas.com"
+        email="info@faceitcitasrapidas.com"
       />
     </>
   );

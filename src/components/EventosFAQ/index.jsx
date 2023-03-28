@@ -8,7 +8,7 @@ const EventosFAQ = () => {
     <>
       <div className={styles.eventosContainer}>
         <h2>Eventos</h2>
-        <h3>Qué son las citas rápidas</h3>
+        <h3>¿ Qué son las citas rápidas ?</h3>
         <p>
           <b>
             Este sistema de citas consta de un encuentro presencial previamente
@@ -36,7 +36,7 @@ const EventosFAQ = () => {
             coincidencias.
           </b>
         </p>
-        <h3>Dónde son los eventos</h3>
+        <h3>¿ Dónde son los eventos ?</h3>
         <p>
           <b>
             Actualmente los encuentros son únicamente en las ciudades de
@@ -54,7 +54,7 @@ const EventosFAQ = () => {
             <a>Mostrar encuentros anteriores</a>
           </div>
         </Link>
-        <h3>Cómo contactar nuevamente a un participante</h3>
+        <h3>¿ Cómo contactar nuevamente a un participante ?</h3>
         <p>
           Al finalizar el evento puedes informar al organizador con qué
           participantes deseas seguir en contacto.{" "}

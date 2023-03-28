@@ -4,6 +4,7 @@ import ArrowDown from "../../assets/images/ArrowDown.svg";
 import ArrowUp from "../../assets/images/ArrowUp.svg";
 import { useState } from "react";
 import { info } from "./strings";
+import ContainerYellowFAQ from "../ContainerYellowFAQ";
 
 const FAQmobile = () => {
   const [selected, setSelected] = useState(null);
@@ -51,14 +52,7 @@ const FAQmobile = () => {
           );
         })}
       </div>
-      <div className={styles.containerYellow}>
-        <h4>¿No encontraste lo que estabas buscando?</h4>
-        <p>
-          Envía tu consulta a <br />
-          <b>info@faceitcitasrápidas.com</b> para que podamos responder tus
-          dudas.
-        </p>
-      </div>
+      <ContainerYellowFAQ />
     </>
   );
 };

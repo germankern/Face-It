@@ -32,14 +32,14 @@
 
 .buttonSurvey button {
   margin-bottom: 50px;
-  width: 150px;
+  width: 110px;
   margin-left: 10px;
   font-size: 16px;
-  padding: 4px;
+  font-weight: 500;
+  padding: 2px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-weight: 500;
 }
 
 .buttonSurvey span {

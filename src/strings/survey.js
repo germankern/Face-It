@@ -99,7 +99,7 @@ const textAreaQuestion = [
 const infoBlockStyle = [
   {
     parrafo: "Si quieres saber más, contactanos: ",
-    email: "info@faceitcitasrápidas.com",
+    email: "info@faceitcitasrapidas.com",
   },
 ];
 

@@ -1,4 +1,5 @@
 .hamburger {
   margin-left: 19px;
   margin-right: 21px;
+  cursor: pointer;
 }

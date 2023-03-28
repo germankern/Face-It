@@ -14,19 +14,46 @@
   width: 100%;
   display: block;
 }
-.containerMenuList a::after {
+.containerMenuList li:first-child a:after {
   content: "";
   position: absolute;
   display: block;
   width: 300px;
-  top: 57px;
+  top: 85px;
   border: 1px solid #cac4d0;
   left: 4%;
 }
 
+.containerImageNavbar {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.containerImageNavbar img:nth-child(1) {
+  cursor: pointer;
+}
 .menuListItems {
   margin-left: 0;
-  padding-left: 28px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+.menuListItems a {
+  width: 30%;
+}
+
+.menuListItems h3 a {
+  width: 58%;
+  font-weight: 500;
+}
+.menuListItems h2 {
+  width: 30%;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 7px;
+  margin-bottom: 28px;
+}
+.containerMenuList li:last-child a {
+  width: 58%;
 }
 
 .menuListItems h3 {
@@ -44,7 +71,7 @@
   position: absolute;
   display: block;
   width: 300px;
-  top: 30px;
+  top: 40px;
   border: 1px solid #cac4d0;
 }
 
@@ -58,4 +85,7 @@
 
 .toggle {
   right: 80em;
+}
+.widthLi a {
+  width: 58%;
 }

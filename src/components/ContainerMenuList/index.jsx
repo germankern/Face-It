@@ -1,48 +1,99 @@
 import styles from "./style.module.css";
-import menulist from "../../assets/images/MenuListNavbar.png";
+import arrow from "../../assets/images/Atrás.svg";
+import logo from "../../assets/images/LogoNavbarSmall.svg";
 import Image from "next/image";
 import Link from "next/link";
 
 const ContainerMenuList = ({ toggle, setToggle }) => {
   return (
     <div
-      className={`${styles.containerMenuList} ${toggle ? styles[toggle] : " "}`}
+      className={`${styles.containerMenuList} ${
+        toggle != "" ? styles[toggle] : " "
+      }`}
     >
-      <a href="#">
+      <div className={styles.containerImageNavbar}>
         <Image
-          width="296"
-          height="64"
-          src={menulist}
+          width="28"
+          height="28"
+          src={arrow}
           alt="MenuList"
           onClick={() => setToggle("toggle")}
         />
-      </a>
+        <Image
+          width="120"
+          height="31"
+          src={logo}
+          alt="MenuList"
+          onClick={() => setToggle("toggle")}
+        />
+      </div>
       <ul className={styles.menuListItems}>
-        <Link href="/survey">
-          <li>Registrarme</li>
-        </Link>
-        <Link href="/sobrenosotras">
-          <li>Conócenos</li>
-        </Link>
-        <Link href="/convenios">
-          <li>Convenios</li>
-        </Link>
-        <Link href="/eventos">
-          <li>Eventos</li>
-        </Link>
-        <Link href="/faq">
-          <h3>Preguntas frecuentes</h3>
-        </Link>
-        <li>Legales</li>
-        <Link href="/terms">
-          <li>Terminos y Condiciones</li>
-        </Link>
-        <Link href="/politicas">
-          <h3>Políticas de privacidad</h3>
-        </Link>
-        <Link href="/comentarios">
-          <li>Dejanos tu comentario</li>
-        </Link>
+        <li
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/survey">Registrarme </Link>
+        </li>
+
+        <li
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/sobrenosotras">Conócenos</Link>
+        </li>
+
+        <li
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/convenios">Convenios</Link>
+        </li>
+
+        <li
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/eventos">Eventos</Link>
+        </li>
+
+        <h3
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/faq">Preguntas frecuentes</Link>
+        </h3>
+
+        <h2>Legales</h2>
+
+        <li
+          className={styles.widthLi}
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/terms">Terminos y Condiciones</Link>
+        </li>
+
+        <h3
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/politicas">Políticas de privacidad</Link>
+        </h3>
+
+        <li
+          onClick={() => {
+            setToggle("toggle");
+          }}
+        >
+          <Link href="/comentarios">Dejanos tu comentario</Link>
+        </li>
       </ul>
     </div>
   );

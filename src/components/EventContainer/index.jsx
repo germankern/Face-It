@@ -21,7 +21,7 @@ const events = [
     parrafo: "Santiago de Chile",
   },
   {
-    title: "Lagerhause",
+    title: "Lagerhaus",
     image: lagerhouse,
     alt: "lagerhause image",
     parrafo: "Santiago de Chile",

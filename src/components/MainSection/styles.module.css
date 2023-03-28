@@ -10,6 +10,7 @@
   background-position-y: -20px;
   position: relative;
 }
+
 .containerMainSection::after {
   content: "";
   position: absolute;

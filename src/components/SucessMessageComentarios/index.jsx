@@ -25,7 +25,7 @@ const SucessMessageComentarios = ({ loading }) => {
 
             <Image src={imageSuccess} alt="imageSucess"></Image>
 
-            <Button name={"Volver"} type={"button"}></Button>
+            <Button name={"Volver"} type={"button"} linkHome={"/"}></Button>
           </div>
         )}
       </div>

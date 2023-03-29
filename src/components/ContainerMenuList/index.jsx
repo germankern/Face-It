@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import arrow from "../../assets/images/Atrás.svg";
+import arrow from "../../assets/images/Atras.svg";
 import logo from "../../assets/images/LogoNavbarSmall.svg";
 import Image from "next/image";
 import Link from "next/link";

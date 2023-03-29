@@ -13,19 +13,20 @@ const EventosFAQ = () => {
           <b>
             Este sistema de citas consta de un encuentro presencial previamente
             organizado para conocer gente nueva de forma rápida,
-          </b>
-          <br />
+          </b>{" "}
           categorizado por grupos de edad similar.
           <br />
           En los eventos, cada persona completa un formulario con datos e
           intereses.{" "}
           <b>
-            Luego se disponen 2 rondas de charlas entre parejas, de
-            <br />5 minutos cada una.
+            <br />
+            Luego se disponen 2 rondas de charlas entre parejas, de 5 minutos
+            cada una.
             <br />
             Al finalizar el tiempo suena un timbre y todos los participantes
             deben cambiar de pareja.
           </b>{" "}
+          <br />
           El ciclo se repite hasta que todos los participantes se conozcan entre
           sí.
           <br />

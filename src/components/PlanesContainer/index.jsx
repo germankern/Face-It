@@ -5,6 +5,7 @@ import ArrowUp from "../../assets/images/ArrowUp.svg";
 import { useState } from "react";
 import { data } from "./strings";
 import PlanesDesktop from "../PlanesDesktop";
+import Link from "next/link";
 
 const PlanesContainer = () => {
   const [selected, setSelected] = useState(null);
@@ -60,7 +61,9 @@ const PlanesContainer = () => {
       <div className={styles.contactoMail}>
         <p>
           Si quieres saber más, contáctanos:{" "}
-          <a href="#">info@faceitcitasrapidas.com</a>
+          <Link href="mailto:info@faceitcitasrapidas">
+            info@faceitcitasrapidas.com
+          </Link>
         </p>
       </div>
     </>

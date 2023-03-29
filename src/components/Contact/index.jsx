@@ -29,7 +29,7 @@ const Contact = () => {
           href="https://wa.me/+56930879581"
           target={"_blank"}
         >
-          +56 30879581
+          +56 9 30879581
         </a>
       </div>
     </>

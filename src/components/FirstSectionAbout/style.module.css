@@ -47,7 +47,7 @@
 }
 
 .sectionAbout span {
-  display: none;
+  display: inline-block;
   margin-left: 7px;
 }
 @media (min-width: 768px) {
